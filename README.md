@@ -1,1 +1,1 @@
-# MultiPrologWithCA
+# Project IT and CA
