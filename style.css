@@ -4,7 +4,7 @@ body{
     background-image: url('Pay to Win/BG.jpg');
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .container{
     width: 100%;
@@ -34,7 +34,7 @@ body{
     border-color: transparent;
     border-width: 0.2rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .btn-enter-web:hover{
     background-color: hsl(230, 100%, 71%);
