@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap'); 
 
 body{
     background-image: url('Pay to Win/BG.jpg');
     font-family: 'Noto Sans Thai', sans-serif;
     display: flex;
+    font-size: 1.1rem;
 }
 .container{
     width: 100%;
@@ -20,8 +21,7 @@ body{
     align-items: center;
 }
 .logo-1{
-    width: 28%;
-    height: auto;
+    height: 38vh;
 }
 .text-center{
     text-align: center;
@@ -33,11 +33,11 @@ body{
     background-color: transparent;
     border-color: black;
     border-width: 0.2rem;
-    font-size: 1.4rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
+    font-size: 1.1rem;
 }
 .btn-enter-web:hover{
-    background-color: lightskyblue;
+    background-color: hsl(230, 100%, 71%);
     border-color: transparent;
     color: white;
     
