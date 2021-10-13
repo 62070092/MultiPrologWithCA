@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 
 body{
     background-image: url('Pay to Win/BG.jpg');
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .container{
     width: 100%;
@@ -27,14 +27,14 @@ body{
     text-align: center;
 }
 .btn-enter-web{
-    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     border-radius: 250px;
     padding: 0.3rem 3rem;
-    background-color: transparent;
-    border-color: black;
+    background-color: hsl(0, 100%, 100%);
+    border-color: transparent;
     border-width: 0.2rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .btn-enter-web:hover{
     background-color: hsl(230, 100%, 71%);
