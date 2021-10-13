@@ -42,3 +42,8 @@ body{
     color: white;
     
 }
+@media screen and (max-width:375px){
+    body,.btn-enter-web{
+        font-size: 0.9rem;
+    }
+}
