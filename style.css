@@ -26,6 +26,9 @@ body{
 .text-center{
     text-align: center;
 }
+.text-left{
+    text-align: left;
+}
 .btn-enter-web{
     font-family: 'Bai Jamjuree', sans-serif;
     border-radius: 250px;
