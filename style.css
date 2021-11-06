@@ -38,6 +38,7 @@ body{
     border-width: 0.2rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
     font-size: 0.9rem;
+    cursor: pointer;
 }
 .btn-enter-web:hover{
     background-color: hsl(230, 100%, 71%);
