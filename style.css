@@ -149,3 +149,8 @@ img{
 .ready-3[data-swap="0"]{
     display: none;
 }
+
+/*abroad dataset*/
+.im-not[data-swap="0"]{
+    display: none;
+}
