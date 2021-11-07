@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@600&display=swap');
 
 body{
     background-image: url('Pay to Win/BG.jpg');
@@ -45,6 +47,8 @@ img{
     border-width: 0.2rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
     font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 .btn-enter-web:hover{
     background-color: hsl(230, 100%, 71%);
@@ -101,3 +105,16 @@ img{
 .abroad[data-swap="0"]{
     display: none;
 }
+.text-header{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.end-head{
+    font-family: 'Taviraj', serif;
+}
+/* .img-end-bg{
+    z-index: -1;
+    position: absolute;
+    opacity: 10%;
+    height: 100%;
+
+} */
