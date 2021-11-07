@@ -96,8 +96,26 @@ img{
     height: auto;
     padding: 0 1rem;
 }
-
+.text-price{
+    color: red;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+}
 /*dataset country or abroad*/
 .abroad[data-swap="0"]{
+    display: none;
+}
+
+/*dataset take-extra-classes*/
+.tutor[data-swap="0"]{
+    display: none;
+}
+
+.with_vdo[data-swap="0"]{
+    display: none;
+}
+.not_tacke_extra_classes[data-swap="0"]{
     display: none;
 }
