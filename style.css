@@ -141,3 +141,11 @@ img{
 .inter-private[data-swap="0"]{
     display: none;
 }
+
+/*ready dataset*/
+.ready-2[data-swap="0"]{
+    display: none;
+}
+.ready-3[data-swap="0"]{
+    display: none;
+}
