@@ -36,6 +36,15 @@ img{
 .text-left{
     text-align: left;
 }
+
+.text-price{
+    color: red;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+}
+
 .btn-enter-web{
     font-family: 'Bai Jamjuree', sans-serif;
     border-radius: 250px;
@@ -99,5 +108,15 @@ img{
 
 /*dataset country or abroad*/
 .abroad[data-swap="0"]{
+    display: none;
+}
+
+/*dataset line of study*/
+.math-sci[data-swap="0"]{
+    display: none;
+}
+
+/*dataset line of study*/
+.ep[data-swap="0"]{
     display: none;
 }
