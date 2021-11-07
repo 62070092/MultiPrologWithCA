@@ -5,6 +5,7 @@ body{
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
     font-size: 0.9rem;
+    overflow: hidden;
 }
 .container{
     width: 100%;
@@ -21,7 +22,7 @@ body{
     align-items: center;
 }
 .logo-1{
-    height: 38vh;
+    height: 35vh;
 }
 .text-center{
     text-align: center;
@@ -49,4 +50,7 @@ body{
     padding-left: 1rem;
     padding-top: 1rem;
     position: absolute;
+}
+.padding-t-b{
+    padding: 3vh 0vh;
 }
