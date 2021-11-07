@@ -168,3 +168,11 @@ img{
 .column-2{
     grid-template-columns:repeat(3,4fr)
 }
+
+/*dataset book type*/
+.book1[data-swap="0"]{
+    display: none;
+}
+.book3[data-swap="0"]{
+    display: none;
+}
