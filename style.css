@@ -40,6 +40,8 @@ img{
 }
 .text-left{
     text-align: left;
+}.text-right{
+    text-align: right;
 }
 .btn-enter-web{
     font-family: 'Bai Jamjuree', sans-serif;
@@ -114,10 +116,16 @@ img{
 .end-head{
     font-family: 'Taviraj', serif;
 }
-/* .img-end-bg{
-    z-index: -1;
-    position: absolute;
-    opacity: 10%;
-    height: 100%;
-
-} */
+.padding-left{
+    padding-left: 5vw;
+}
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.column-1{
+    grid-template-columns:repeat(1,2fr)
+}
+.column-2{
+    grid-template-columns:repeat(3,4fr)
+}
