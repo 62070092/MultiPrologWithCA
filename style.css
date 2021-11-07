@@ -101,3 +101,11 @@ img{
 .abroad[data-swap="0"]{
     display: none;
 }
+
+/*dataset school type*/
+.school-voc[data-swap="0"]{
+    display: none;
+}
+.school-pri[data-swap="0"]{
+    display: none;
+}
