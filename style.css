@@ -85,10 +85,7 @@ img{
 .btn.btn-right{
     right: 30%;
 }
-.arrow{
-    width: 30px;
-    height: auto;
-}
+
 .text-box{
     font-family: 'Bai Jamjuree', sans-serif;
     background-color: white;
@@ -104,8 +101,30 @@ img{
     padding: 0 1rem;
 }
 
-/*dataset country or abroad*/
-.abroad[data-swap="0"]{
+/*swapping info*/
+/* 
+.info-1[data-swap="1"]{
+    display: block;
+}
+.info-2[data-swap="1"]{
+    display: block;
+}
+
+.info-3[data-swap="1"]{
+    display: block;
+} */
+
+
+.info-1[data-swap="0"]{
+    display: none;
+    /* opacity: 0; */
+}
+.info-2[data-swap="0"]{
+    display: none;
+    /* opacity: 0; */
+}
+
+.info-3[data-swap="0"]{
     display: none;
 }
 
@@ -187,10 +206,6 @@ img{
     padding-left: 5vw;
 }
 
-/*dataset country or abroad*/
-.abroad[data-swap="0"]{
-    display: none
-}
 .text-right{
     text-align: right;
 }
