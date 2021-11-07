@@ -132,3 +132,12 @@ img{
 .end-head{
     font-family: 'Taviraj', serif;
 }
+
+/**/
+.sci-private[data-swap="0"]{
+    display: none;
+}
+
+.inter-private[data-swap="0"]{
+    display: none;
+}
