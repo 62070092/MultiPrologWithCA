@@ -176,3 +176,12 @@ img{
 .book3[data-swap="0"]{
     display: none;
 }
+
+.padding-left{
+    padding-left: 5vw;
+}
+
+/*dataset country or abroad*/
+.abroad[data-swap="0"]{
+    display: none;
+}
