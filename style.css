@@ -117,9 +117,18 @@ img{
 .course-3[data-swap="0"]{
     display: none;
 }
+
+/*------------------------*/
 .text-small{
     color: red;
     text-align: left;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 0.7rem;
+}
+
+.text-header{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.end-head{
+    font-family: 'Taviraj', serif;
 }
