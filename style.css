@@ -36,15 +36,6 @@ img{
 .text-left{
     text-align: left;
 }
-
-.text-price{
-    color: red;
-    text-align: left;
-    font-size: 0.9rem;
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: bold;
-}
-
 .btn-enter-web{
     font-family: 'Bai Jamjuree', sans-serif;
     border-radius: 250px;
@@ -105,18 +96,40 @@ img{
     height: auto;
     padding: 0 1rem;
 }
+.text-price{
+    color: red;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+}
+
+.padding-left{
+    padding-left: 5vw;
+}
 
 /*dataset country or abroad*/
 .abroad[data-swap="0"]{
     display: none;
 }
 
-/*dataset line of study*/
-.math-sci[data-swap="0"]{
+/*dataset take-extra-classes*/
+.tutor[data-swap="0"]{
     display: none;
 }
 
-/*dataset line of study*/
-.ep[data-swap="0"]{
+.with_vdo[data-swap="0"]{
+    display: none;
+}
+.not_tacke_extra_classes[data-swap="0"]{
+    display: none;
+}
+
+/*dataset otherbook*/
+.buy_book[data-swap="0"]{
+    display: none;
+}
+
+.not_buy_book[data-swap="0"]{
     display: none;
 }
