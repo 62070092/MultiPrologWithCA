@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@600&display=swap');
 
 body{
     background-image: url('Pay to Win/BG.jpg');
@@ -8,9 +6,6 @@ body{
     display: flex;
     font-size: 0.9rem;
     overflow: hidden;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 img{
@@ -40,8 +35,6 @@ img{
 }
 .text-left{
     text-align: left;
-}.text-right{
-    text-align: right;
 }
 .btn-enter-web{
     font-family: 'Bai Jamjuree', sans-serif;
@@ -52,7 +45,6 @@ img{
     border-width: 0.2rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
     font-size: 0.9rem;
-    font-weight: bold;
     cursor: pointer;
 }
 .btn-enter-web:hover{
@@ -110,22 +102,55 @@ img{
 .abroad[data-swap="0"]{
     display: none;
 }
+
+/*course*/
+.text-price{
+    color: red;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+}
+.course-2[data-swap="0"]{
+    display: none;
+}
+.course-3[data-swap="0"]{
+    display: none;
+}
+
+/*------------------------*/
+.text-small{
+    color: red;
+    text-align: left;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 0.7rem;
+}
+
 .text-header{
     font-family: 'Bai Jamjuree', sans-serif;
 }
 .end-head{
     font-family: 'Taviraj', serif;
 }
-.padding-left{
-    padding-left: 5vw;
+
+/**/
+.sci-private[data-swap="0"]{
+    display: none;
 }
-.grid-parent{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+.inter-private[data-swap="0"]{
+    display: none;
 }
-.column-1{
-    grid-template-columns:repeat(1,2fr)
+
+/*ready dataset*/
+.ready-2[data-swap="0"]{
+    display: none;
 }
-.column-2{
-    grid-template-columns:repeat(3,4fr)
+.ready-3[data-swap="0"]{
+    display: none;
+}
+
+/*abroad dataset*/
+.im-not[data-swap="0"]{
+    display: none;
 }
