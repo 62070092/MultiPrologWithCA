@@ -96,6 +96,13 @@ img{
     height: auto;
     padding: 0 1rem;
 }
+.text-price{
+    color: red;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+}
 
 /*dataset country or abroad*/
 .abroad[data-swap="0"]{
@@ -107,5 +114,13 @@ img{
     display: none;
 }
 .school-pri[data-swap="0"]{
+    display: none;
+}
+
+/*dataset book type*/
+.book1[data-swap="0"]{
+    display: none;
+}
+.book3[data-swap="0"]{
     display: none;
 }
