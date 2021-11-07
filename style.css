@@ -154,3 +154,17 @@ img{
 .im-not[data-swap="0"]{
     display: none;
 }
+
+.padding-left{
+    padding-left: 5vw;
+}
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.column-1{
+    grid-template-columns:repeat(1,2fr)
+}
+.column-2{
+    grid-template-columns:repeat(3,4fr)
+}
