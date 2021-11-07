@@ -101,3 +101,19 @@ img{
 .abroad[data-swap="0"]{
     display: none;
 }
+
+.sci-private[data-swap="0"]{
+    display: none;
+}
+
+.inter-private[data-swap="0"]{
+    display: none;
+}
+
+.text-price{
+    color: red;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+}
