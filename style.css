@@ -5,11 +5,14 @@ body{
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
     font-size: 0.9rem;
+    overflow: hidden;
 }
+
 img{
     max-width: 100%;
     height: auto;
 }
+
 .container{
     width: 100%;
     height: auto;
@@ -25,7 +28,7 @@ img{
     align-items: center;
 }
 .logo-1{
-    height: 38vh;
+    height: 35vh;
 }
 .text-center{
     text-align: center;
@@ -42,7 +45,6 @@ img{
     border-width: 0.2rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
     font-size: 0.9rem;
-    cursor: pointer;
 }
 .btn-enter-web:hover{
     background-color: hsl(230, 100%, 71%);
@@ -55,6 +57,11 @@ img{
     padding-top: 1rem;
     position: absolute;
 }
+.padding-t-b{
+    padding: 3vh 0vh;
+}
+
+/*country or abroad*/
 .btn{
     background: none;
     border: none;
@@ -93,10 +100,4 @@ img{
 /*dataset country or abroad*/
 .abroad[data-swap="0"]{
     display: none;
-  }
-
-.country[data-swap="0"]{
-    opacity: 0;
 }
-
-
