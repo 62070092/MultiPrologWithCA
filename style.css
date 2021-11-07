@@ -90,6 +90,7 @@ img{
     padding: 0 1rem;
 }
 
+/*dataset country or abroad*/
 .abroad[data-swap="0"]{
     display: none;
   }
