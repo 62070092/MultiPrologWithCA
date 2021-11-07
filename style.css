@@ -103,9 +103,6 @@ img{
 
 /*swapping info*/
 
-.list{
-    height: 60vh;
-}
 .info-1[data-swap="0"]{
     display: none;
 }
@@ -116,8 +113,7 @@ img{
 .info-3[data-swap="0"]{
     display: none;
 }
-
-/*course*/
+/* -------------------- */
 .text-price{
     color: red;
     text-align: left;
@@ -125,19 +121,12 @@ img{
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: bold;
 }
-.course-2[data-swap="0"]{
-    display: none;
-}
-.course-3[data-swap="0"]{
-    display: none;
-}
 
-/*------------------------*/
 .text-small{
     color: red;
     text-align: left;
     font-family: 'Bai Jamjuree', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .text-header{
@@ -145,28 +134,6 @@ img{
 }
 .end-head{
     font-family: 'Taviraj', serif;
-}
-
-/**/
-.sci-private[data-swap="0"]{
-    display: none;
-}
-
-.inter-private[data-swap="0"]{
-    display: none;
-}
-
-/*ready dataset*/
-.ready-2[data-swap="0"]{
-    display: none;
-}
-.ready-3[data-swap="0"]{
-    display: none;
-}
-
-/*abroad dataset*/
-.im-not[data-swap="0"]{
-    display: none;
 }
 
 .padding-left{
@@ -181,14 +148,6 @@ img{
 }
 .column-2{
     grid-template-columns:repeat(3,4fr)
-}
-
-/*dataset book type*/
-.book1[data-swap="0"]{
-    display: none;
-}
-.book3[data-swap="0"]{
-    display: none;
 }
 
 .padding-left{
