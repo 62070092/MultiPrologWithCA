@@ -102,26 +102,15 @@ img{
 }
 
 /*swapping info*/
-/* 
-.info-1[data-swap="1"]{
-    display: block;
+
+.list{
+    height: 60vh;
 }
-.info-2[data-swap="1"]{
-    display: block;
-}
-
-.info-3[data-swap="1"]{
-    display: block;
-} */
-
-
 .info-1[data-swap="0"]{
     display: none;
-    /* opacity: 0; */
 }
 .info-2[data-swap="0"]{
     display: none;
-    /* opacity: 0; */
 }
 
 .info-3[data-swap="0"]{
