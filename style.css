@@ -7,6 +7,12 @@ body{
     font-size: 0.9rem;
     overflow: hidden;
 }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 .container{
     width: 100%;
     height: auto;
@@ -53,4 +59,45 @@ body{
 }
 .padding-t-b{
     padding: 3vh 0vh;
+}
+
+/*country or abroad*/
+.btn{
+    background: none;
+    border: none;
+    background-position:center;
+    background-repeat:no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top : 40%;
+    z-index: 100;
+}
+.btn.btn-left{
+    left: 30%;
+}
+.btn.btn-right{
+    right: 30%;
+}
+.arrow{
+    width: 30px;
+    height: auto;
+}
+.text-box{
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 0.1rem 3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.icon{
+    width: 20px;
+    height: auto;
+    padding: 0 1rem;
+}
+
+/*dataset country or abroad*/
+.abroad[data-swap="0"]{
+    display: none;
 }
