@@ -119,3 +119,12 @@ img{
 .not_tacke_extra_classes[data-swap="0"]{
     display: none;
 }
+
+/*dataset otherbook*/
+.buy_book[data-swap="0"]{
+    display: none;
+}
+
+.not_buy_book[data-swap="0"]{
+    display: none;
+}
