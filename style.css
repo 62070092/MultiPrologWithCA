@@ -177,3 +177,10 @@ img{
     min-height: auto;
     min-width: 50%;
 }
+
+.comment-box{
+    width: calc(70% - 5vh);height:30vh;
+  border: 2px solid black;
+  border-radius: 15px;
+  background: white;
+}
