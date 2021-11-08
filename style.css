@@ -163,3 +163,17 @@ img{
     grid-template-columns: repeat(2,1fr);
     grid-gap: 15vw;
 }
+.star-conclusion{
+    height: 5vh;
+}
+.red-font{
+    color: red;
+}
+.card-container{
+    background: #fff;
+    border-radius: 3vh;
+    box-shadow: 14px 14px 0px #0003;
+    padding: 1em;
+    min-height: auto;
+    min-width: 50%;
+}
