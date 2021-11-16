@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap%27');
 
 body{
-    background-image: url('Pay to Win/BG.jpg');
+    background-image: url('/Pay to Win/BG.jpg');
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
     font-size: 1em;
     overflow: hidden;
     background-position:center;
-    background-repeat:no-repeat;
     background-size: cover;
 }
 
