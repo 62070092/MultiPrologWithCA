@@ -34,6 +34,9 @@ submitButton.addEventListener("click", (e) => {
     }).catch((eror) => {
         console.log(error)
     })
-    alert("your comment has been success")
+
 })
 
+function eraseText() {
+    document.getElementById("comment").value = "";
+}
