@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@600&display=swap%27');
 
 body{
     background-image: url('Pay to Win/BG.jpg');
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
-    font-size: 0.9rem;
+    font-size: 1rem;
     overflow: hidden;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 img{
@@ -45,6 +50,8 @@ img{
     border-width: 0.2rem;
     box-shadow: 4px 4px hsl(228, 82%, 51%);
     font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
 }
 .btn-enter-web:hover{
     background-color: hsl(230, 100%, 71%);
@@ -78,16 +85,13 @@ img{
 .btn.btn-right{
     right: 30%;
 }
-.arrow{
-    width: 30px;
-    height: auto;
-}
+
 .text-box{
     font-family: 'Bai Jamjuree', sans-serif;
     background-color: white;
     text-align: center;
     color: black;
-    padding: 0.1rem 3rem;
+    padding: 0 3rem;
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -96,6 +100,20 @@ img{
     height: auto;
     padding: 0 1rem;
 }
+
+/*swapping info*/
+
+.info-1[data-swap="0"]{
+    display: none;
+}
+.info-2[data-swap="0"]{
+    display: none;
+}
+
+.info-3[data-swap="0"]{
+    display: none;
+}
+/* -------------------- */
 .text-price{
     color: red;
     text-align: left;
@@ -104,32 +122,65 @@ img{
     font-weight: bold;
 }
 
+.text-small{
+    color: red;
+    text-align: left;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 0.8rem;
+}
+
+.text-header{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.end-head{
+    font-family: 'Taviraj', serif;
+}
+
+.padding-left{
+    padding-left: 5vw;
+}
+.grid-parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.column-1{
+    grid-template-columns:repeat(1,2fr)
+}
+.column-2{
+    grid-template-columns:repeat(3,4fr)
+}
+
 .padding-left{
     padding-left: 5vw;
 }
 
-/*dataset country or abroad*/
-.abroad[data-swap="0"]{
-    display: none;
+.text-right{
+    text-align: right;
 }
 
-/*dataset take-extra-classes*/
-.tutor[data-swap="0"]{
-    display: none;
+.grid-parent-bill{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15vw;
+}
+.star-conclusion{
+    height: 5vh;
+}
+.red-font{
+    color: red;
+}
+.card-container{
+    background: #fff;
+    border-radius: 3vh;
+    box-shadow: 14px 14px 0px #0003;
+    padding: 1em;
+    min-height: auto;
+    min-width: 50%;
 }
 
-.with_vdo[data-swap="0"]{
-    display: none;
-}
-.not_tacke_extra_classes[data-swap="0"]{
-    display: none;
-}
-
-/*dataset otherbook*/
-.buy_book[data-swap="0"]{
-    display: none;
-}
-
-.not_buy_book[data-swap="0"]{
-    display: none;
+.comment-box{
+    width: calc(70% - 5vh);height:30vh;
+  border: 2px solid black;
+  border-radius: 15px;
+  background: white;
 }

@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
-
+    <link rel="icon" href="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ptw mini logo.svg" type="image/svg">
     <title>Pay to Win Education
     </title>
 
@@ -26,15 +26,18 @@
             </b>
         </div>
         <br>
-        <button type="image" class="btn btn-left">
-            <img class="arrow" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png">
-        </button>
-
+        <!-- ปุ่ม -->
+        <a>
+            <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2()">
+        </a>
+        <a>
+            <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2()">
+        </a>
+        <!--  -->
         <div class="list">
-            <div class="tutor" data-swap="1">
+            <div class="info-1" data-swap="1">
                 <div class="flex-center">
-                    <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับติวเตอร์.PNG"
-                        style="width: 200px;">
+                    <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับติวเตอร์.PNG" style="height: 30vh;">
                 </div>
                 <br>
                 <div class="flex-center">
@@ -44,24 +47,23 @@
                 </div>
                 <br>
                 <div class="flex-center">
-                    <p class="text-left">เรียนพิเศษตัวต่อตัวกับรุ่นพี่ อาจารย์ หรือติวเตอร์ที่คุณชื่นชอบ
-                        <br>มีข้อได้เปรียบตรงสงสัยอะไรตรงไหนก็ถามได้ในทันที ขอให้เน้น
-                        <br>ตรงไหน ก็เน้นได้ตามสั่ง แต่ไม่รู้จะสู้กับการเรียนกับที่ติวดังๆ <br> ได้ไหมน่ะสิ . . .
-                    </p>
-                </div>
-                <div class="flex-center">
-                    <p class="text-price">57,600 บาทต่อ 3 ปี</p>
+                    <div class="text-left">
+                        <p class="text-left">เรียนพิเศษตัวต่อตัวกับรุ่นพี่ อาจารย์ หรือติวเตอร์ที่คุณชื่นชอบ
+                            <br>มีข้อได้เปรียบตรงสงสัยอะไรตรงไหนก็ถามได้ในทันที ขอให้เน้น
+                            <br>ตรงไหน ก็เน้นได้ตามสั่ง แต่ไม่รู้จะสู้กับการเรียนกับที่ติวดังๆ <br> ได้ไหมน่ะสิ . . .
+                        </p>
+                        <p class="text-price">57,600 บาทต่อ 3 ปี</p>
+                    </div>
                 </div>
                 <br>
                 <div class="flex-center">
-                    <button type="button" class="btn-enter-web" onclick="/*เดี๋ยวตรงนี้ใส่ชื่อฟังชั่น*/">เลือก</button>
+                    <button type="button" class="btn-enter-web" onclick="location.href='otherbook.html'">เลือก</button>
                 </div>
             </div>
 
-            <div class="with_vdo" data-swap="0">
+            <div class="info-2" data-swap="0">
                 <div class="flex-center">
-                    <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับวิดีโอ.PNG"
-                        style="width: 200px;">
+                    <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับวิดีโอ.PNG" style="height: 30vh;">
                 </div>
                 <br>
                 <div class="flex-center">
@@ -78,14 +80,13 @@
                 </div>
                 <br>
                 <div class="flex-center">
-                    <button type="button" class="btn-enter-web" onclick="/*เดี๋ยวตรงนี้ใส่ชื่อฟังชั่น*/">เลือก</button>
+                    <button type="button" class="btn-enter-web" onclick="location.href='course.html'">ไปเลือกคอร์สติว</button>
                 </div>
             </div>
 
-            <div class="not_tacke_extra_classes" data-swap="0">
+            <div class="info-3" data-swap="0">
                 <div class="flex-center">
-                    <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/ไม่เรียนพิเศษ.PNG"
-                        style="width: 200px;">
+                    <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/ไม่เรียนพิเศษ.PNG" style="height: 30vh;">
                 </div>
                 <br>
                 <div class="flex-center">
@@ -102,23 +103,18 @@
                 </div>
                 <br>
                 <div class="flex-center">
-                    <button type="button" class="btn-enter-web" onclick="/*เดี๋ยวตรงนี้ใส่ชื่อฟังชั่น*/">เลือก</button>
+                    <button type="button" class="btn-enter-web" onclick="location.href='are-you-sure.html'">เลือก</button>
                 </div>
             </div>
         </div>
 
         <br>
         <!-- ไม่เจอ SVG เลยใช้อันเก่า -->
-        <div class="flex-center">
+        <!-- <div class="flex-center">
             <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนในประเทศ icon.svg">
             <img class="icon"
                 src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนต่างประเทศ icon.svg">
-        </div>
-
-        <button type="image" class="btn btn-right" onclick="">
-            <img class="arrow" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png">
-        </button>
-
+        </div> -->
     </div>
 
 

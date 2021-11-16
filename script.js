@@ -1,29 +1,36 @@
+let info = "ข้อมูล1"
 
-
-function swapInfo(direction){
-    if(direction == "right"){
-        let country = document.querySelector(".country");
-        let abroad = document.querySelector(".abroad");
+function swapInfo(){
+    if(info === "ข้อมูล1"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="0";
+        document.querySelectorAll(".info-2")[0].dataset.swap="1";
+        info = "ข้อมูล2"
+    }
+    else{
+        document.querySelectorAll(".info-1")[0].dataset.swap="1";
+        document.querySelectorAll(".info-2")[0].dataset.swap="0";
+        info = "ข้อมูล1"
     }
 }
 
-var slide_strip = $('.infos');
-var slides = slide_strip.find('> *');
-
-var next = $('.btn-right');
-var prev = $('.btn-left');
-
-next.on('click', swapInfo.bind(null, 'next'));
-prev.on('click',swapInfo);
-
-function swapInfo(direction){
-    var swap = parseInt(slide_strip.attr('data-swap'), 5);
-
-    if(direction == 'next'){
-            swap = Math.min(infos.length, swap + 1);
-    } else {
-            swap = Math.max(swap - 1, 0);
+function swapInfo_2(){
+    if(info === "ข้อมูล1"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="0";
+        document.querySelectorAll(".info-2")[0].dataset.swap="1";
+        document.querySelectorAll(".info-3")[0].dataset.swap="0";
+        info = "ข้อมูล2"
+    }
+    else if(info === "ข้อมูล2"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="0";
+        document.querySelectorAll(".info-2")[0].dataset.swap="0";
+        document.querySelectorAll(".info-3")[0].dataset.swap="1";
+        info = "ข้อมูล3"
+    }
+    else if(info === "ข้อมูล3"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="1";
+        document.querySelectorAll(".info-2")[0].dataset.swap="0";
+        document.querySelectorAll(".info-3")[0].dataset.swap="0";
+        info = "ข้อมูล1"
     }
 
-    slide_strip.attr('data-swap', swap);
-    };
+}
