@@ -1,0 +1,19 @@
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAJ5JaS14iiUdZvad1lYI-KmC87xx_3V20",
+    authDomain: "pay-to-win-education.firebaseapp.com",
+    projectId: "pay-to-win-education",
+    storageBucket: "pay-to-win-education.appspot.com",
+    messagingSenderId: "296020543103",
+    appId: "1:296020543103:web:6ad0dcd6ab0234a0e5e14a"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>

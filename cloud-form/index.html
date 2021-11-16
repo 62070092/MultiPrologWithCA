@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cloud Form</title>
+</head>
+
+<body>
+    <div class="container flex-center">
+        <div>
+            <h3>firebase form</h3>
+            <label for="fname">comment</label>
+            <form>
+                <textarea id="comment" name="name" placeholder="Write your comment"></textarea>
+                <br>
+                <center><button type="submit" id="submit" onclick="javascript:eraseText();">submit</button></center>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

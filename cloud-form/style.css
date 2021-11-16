@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap%27');
+
+body{
+    background-image: url('Pay to Win/BG.jpg');
+    font-family: 'Bai Jamjuree', sans-serif;
+    display: flex;
+    font-size: 1em;
+    overflow: hidden;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    padding: 1rem;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea {
+    width: 35vw;
+    height: 30vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    background-color: #f8f8f8;
+    resize: none;
+  }
