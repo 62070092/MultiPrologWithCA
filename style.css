@@ -374,6 +374,8 @@ img{
 } */
 
 .star_icon{
+    margin-left: 15px;
+    height: 15px;
 }
 
 /*i'm ready*/
@@ -411,4 +413,49 @@ img{
     width: 6.5rem;
     border-radius: 0.4rem;
     background: #ff4754;
+}
+
+@media {
+    .main-image{
+        height: 30vh;
+        width: auto;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    body{
+        overflow: auto;
+    }
+
+    .btn.btn-left{
+    left: 20%;
+}
+    .btn.btn-right{
+    right: 20%;
+}
+    
+}
+
+@media (max-width: 800px) {
+    .btn.btn-left{
+    left: 8%;
+}
+    .btn.btn-right{
+    right: 8%;
+}
+    h1{
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    .main-image{
+        height: 23vh;
+        width: auto;
+    }
 }
