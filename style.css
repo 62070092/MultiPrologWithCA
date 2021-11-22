@@ -213,3 +213,24 @@ img{
     border-radius: 0.4rem;
     background: #ff4754;
 }
+
+.bar[data-bar="1"]{
+    height: 100%;
+    width: 20px;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar[data-bar="2"]{
+    height: 100%;
+    width: 20px;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar[data-bar="3"]{
+    height: 100%;
+    width: 30px;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}

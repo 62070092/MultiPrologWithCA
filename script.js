@@ -1,4 +1,5 @@
-let info = "ข้อมูล1"
+let info = "ข้อมูล1";
+var i = 0;
 
 function swapInfo(){
     if(info === "ข้อมูล1"){
@@ -7,6 +8,7 @@ function swapInfo(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         info = "ข้อมูล2"
+
     }
     else{
         document.querySelectorAll(".info-1")[0].dataset.swap="1";
@@ -15,6 +17,7 @@ function swapInfo(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         info = "ข้อมูล1"
     }
+    
 }
 
 function swapInfo_2(){
@@ -26,6 +29,8 @@ function swapInfo_2(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
+
+        document.querySelectorAll(".bar")[0].dataset.bar="2";
         info = "ข้อมูล2"
     }
     else if(info === "ข้อมูล2"){
@@ -36,6 +41,8 @@ function swapInfo_2(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
+
+        document.querySelectorAll(".bar")[0].dataset.bar="3";
         info = "ข้อมูล3"
     }
     else if(info === "ข้อมูล3"){
@@ -46,6 +53,8 @@ function swapInfo_2(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="1";
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
+
+        document.querySelectorAll(".bar")[0].dataset.bar="1";
         info = "ข้อมูล1"
     }
 
