@@ -7,6 +7,8 @@ function swapInfo(){
         document.querySelectorAll(".info-2")[0].dataset.swap="1";
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
+
+
         info = "ข้อมูล2"
 
     }
@@ -296,9 +298,6 @@ function swapInfo_8(){
   
 }
 
-
-
-
 // star function
 
 let star = "star_one"
@@ -309,7 +308,6 @@ function starInfo(){
         document.querySelectorAll(".star_2")[0].dataset.swap="1";
         document.querySelectorAll(".star_3")[0].dataset.swap="0";
 
-
         info = "star_two"
     }
     else if(info === "star_two"){
@@ -317,15 +315,12 @@ function starInfo(){
         document.querySelectorAll(".star_2")[0].dataset.swap="0";
         document.querySelectorAll(".star_3")[0].dataset.swap="1";
 
-
         info = "star_three"
     }
     else if(info === "star_three"){
         document.querySelectorAll(".star_1")[0].dataset.swap="1";
         document.querySelectorAll(".star_2")[0].dataset.swap="0";
         document.querySelectorAll(".star_3")[0].dataset.swap="0";
-
-
 
         info = "star_one"
     }
