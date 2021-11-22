@@ -101,21 +101,25 @@ tr,td {
 
 
 @media (max-width: 500px) {
+    body{
+        font-size: 3rem;
+    }
     h2{
-        font-size: 1.4rem;
+        
     }
     .form-name{
-        width: 80%;
+        width: auto;
         height: 8vh;
     }
     .form-comment{
-        width: 80%;
+
+        width: auto;
         height: 35vh;
     }
     .padding{
         padding:0 1.5rem;
     }
     .btn-enter-web{
-        font-size: 1rem;
+        font-size: 5rem;
     }
 }
