@@ -113,6 +113,20 @@ img{
 .info-3[data-swap="0"]{
     display: none;
 }
+
+/*dataset icon*/
+.icon{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(346deg) brightness(100%) contrast(100%);
+}
+.icon.icon_1[data-icon="1"]{
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+.icon.icon_2[data-icon="1"]{
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+.icon.icon_3[data-icon="1"]{
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
 /* -------------------- */
 .text-price{
     color: red;
@@ -180,7 +194,185 @@ img{
 
 .comment-box{
     width: calc(70% - 5vh);height:30vh;
-  border: 2px solid black;
-  border-radius: 15px;
-  background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: white;
+}
+
+.progress{
+    height: 0.8rem;
+    width: 8rem;
+    border-radius: 0.4rem;
+    background: white;
+
+}
+
+.bar{
+    height: 100%;
+    width: 1rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+/*school-type*/
+.bar.bar_1[data-bar="1"]{
+    height: 100%;
+    width: 2rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_1[data-bar="2"]{
+    height: 100%;
+    width: 2rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_1[data-bar="3"]{
+    height: 100%;
+    width: 3rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+/*line_school*/
+.bar.bar_2[data-bar="1"]{
+    height: 100%;
+    width: 2.5rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_2[data-bar="2"]{
+    height: 100%;
+    width: 3rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_2[data-bar="3"]{
+    height: 100%;
+    width: 3rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+/*private-school*/
+.bar.bar_3[data-bar="1"]{
+    height: 100%;
+    width: 3.5rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_3[data-bar="2"]{
+    height: 100%;
+    width: 4rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_3[data-bar="3"]{
+    height: 100%;
+    width: 4rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+/*Take-extar-class จาก อาชีวะ*/
+.bar.bar_4[data-bar="1"]{
+    height: 100%;
+    width: 3rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_4[data-bar="2"]{
+    height: 100%;
+    width: 2.5rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_4[data-bar="3"]{
+    height: 100%;
+    width: 2rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+/*course จาก อาชีวะ*/
+.bar.bar_5[data-bar="1"]{
+    height: 100%;
+    width: 3rem;
+    border-radius: 0.5rem;
+    background: #ff4754;
+}
+
+.bar.bar_5[data-bar="2"]{
+    height: 100%;
+    width: 3.5rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_5[data-bar="3"]{
+    height: 100%;
+    width: 4rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+/*book จาก อาชีวะ*/
+.bar.bar_6[data-bar="1"]{
+    height: 100%;
+    width: 4rem;
+    border-radius: 0.5rem;
+    background: #ff4754;
+}
+
+.bar.bar_6[data-bar="2"]{
+    height: 100%;
+    width: 5.5rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_6[data-bar="3"]{
+    height: 100%;
+    width: 7rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+/*otherbook จาก อาชีวะ*/
+.bar.bar_7[data-bar="1"]{
+    height: 100%;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    background: #ff4754;
+}
+
+.bar.bar_7[data-bar="2"]{
+    height: 100%;
+    width: 2rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+
+}
+/*star*/
+.star_1[data-star="0"]{
+    display: none;
+}
+
+.star_2[data-star="0"]{
+    display: none;
+}
+
+.star_3[data-star="0"]{
+    display: none;
+}
+
+.star_icon{
+    
 }
