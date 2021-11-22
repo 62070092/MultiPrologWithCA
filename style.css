@@ -194,7 +194,22 @@ img{
 
 .comment-box{
     width: calc(70% - 5vh);height:30vh;
-  border: 2px solid black;
-  border-radius: 15px;
-  background: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: white;
+}
+
+.progress{
+    height: 0.8rem;
+    width: 10rem;
+    border-radius: 0.4rem;
+    background: white;
+
+}
+
+.bar{
+    height: 100%;
+    width: 0;
+    border-radius: 0.4rem;
+    background: #ff4754;
 }
