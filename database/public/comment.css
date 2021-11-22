@@ -85,7 +85,7 @@ body{
 
 
  table{
-     width: 80%;
+     width: 90%;
  }
 .table-bordered {
     box-sizing: border-box;
@@ -98,28 +98,28 @@ tr,td {
     border-radius: 0.5vw;
     background-color: #ffffff;
 }
-
+td{
+    width: 0.5vw;
+}
 
 @media (max-width: 500px) {
-    body{
-        font-size: 3rem;
-    }
+
     h2{
-        
+        font-size: 1.4rem;
     }
     .form-name{
-        width: auto;
+        width: 90%;
         height: 8vh;
     }
     .form-comment{
-
-        width: auto;
+        width: 90%;
         height: 35vh;
     }
     .padding{
         padding:0 1.5rem;
     }
     .btn-enter-web{
-        font-size: 5rem;
+        font-size: 1rem;
     }
+
 }
