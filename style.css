@@ -231,7 +231,11 @@ img{
     width: 1rem;
     border-radius: 0.4rem;
     background: #ff4754;
+
 }
+
+  
+
 
 /*school-type*/
 .bar.bar_1[data-bar="1"]{
@@ -359,7 +363,7 @@ img{
 
 .bar.bar_6[data-bar="3"]{
     height: 100%;
-    width: 7.5rem;
+    width: 7.3rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
@@ -416,7 +420,7 @@ img{
 .bar.bar_9[data-bar="1"]{
     height: 100%;
     width: 7.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     background: #ff4754;
 }
 
