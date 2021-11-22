@@ -1,7 +1,7 @@
 
-window.addEventListener('click', () => {
+window.addEventListener('load', () => {
     
-    const text = sessionStorage.getItem('NAME');
+    const text = localStorage.getItem('NAME');
     document.getElementById('text-choose').innerHTML = text;
 });
 
