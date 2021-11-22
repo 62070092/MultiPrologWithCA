@@ -298,30 +298,70 @@ function swapInfo_8(){
   
 }
 
-// star function
+function swapInfo_9(){
+    if(info === "ข้อมูล1"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="0";
+        document.querySelectorAll(".info-2")[0].dataset.swap="1";
+        document.querySelectorAll(".icon_1")[0].dataset.icon="0";
+        document.querySelectorAll(".icon_2")[0].dataset.icon="1";
 
-let star = "star_one"
+        document.querySelectorAll(".bar_8")[0].dataset.bar="2";
 
-function starInfo(){
-    if(info === "star_one"){
-        document.querySelectorAll(".star_1")[0].dataset.swap="0";
-        document.querySelectorAll(".star_2")[0].dataset.swap="1";
-        document.querySelectorAll(".star_3")[0].dataset.swap="0";
+        info = "ข้อมูล2"
 
-        info = "star_two"
     }
-    else if(info === "star_two"){
-        document.querySelectorAll(".star_1")[0].dataset.swap="0";
-        document.querySelectorAll(".star_2")[0].dataset.swap="0";
-        document.querySelectorAll(".star_3")[0].dataset.swap="1";
+    else{
+        document.querySelectorAll(".info-1")[0].dataset.swap="1";
+        document.querySelectorAll(".info-2")[0].dataset.swap="0";
+        document.querySelectorAll(".icon_1")[0].dataset.icon="1";
+        document.querySelectorAll(".icon_2")[0].dataset.icon="0";
 
-        info = "star_three"
+        document.querySelectorAll(".bar_8")[0].dataset.bar="1";
+        info = "ข้อมูล1"
     }
-    else if(info === "star_three"){
-        document.querySelectorAll(".star_1")[0].dataset.swap="1";
-        document.querySelectorAll(".star_2")[0].dataset.swap="0";
-        document.querySelectorAll(".star_3")[0].dataset.swap="0";
 
-        info = "star_one"
+}
+
+
+function swapInfo_10(){
+    if(info === "ข้อมูล1"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="0";
+        document.querySelectorAll(".info-2")[0].dataset.swap="1";
+        document.querySelectorAll(".info-3")[0].dataset.swap="0";
+
+        document.querySelectorAll(".icon_1")[0].dataset.icon="0";
+        document.querySelectorAll(".icon_2")[0].dataset.icon="1";
+        document.querySelectorAll(".icon_3")[0].dataset.icon="0";
+
+        document.querySelectorAll(".bar_9")[0].dataset.bar="2";
+
+        info = "ข้อมูล2"
     }
+    else if(info === "ข้อมูล2"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="0";
+        document.querySelectorAll(".info-2")[0].dataset.swap="0";
+        document.querySelectorAll(".info-3")[0].dataset.swap="1";
+
+        document.querySelectorAll(".icon_1")[0].dataset.icon="0";
+        document.querySelectorAll(".icon_2")[0].dataset.icon="0";
+        document.querySelectorAll(".icon_3")[0].dataset.icon="1";
+
+        document.querySelectorAll(".bar_9")[0].dataset.bar="3";
+
+        info = "ข้อมูล3"
+    }
+    else if(info === "ข้อมูล3"){
+        document.querySelectorAll(".info-1")[0].dataset.swap="1";
+        document.querySelectorAll(".info-2")[0].dataset.swap="0";
+        document.querySelectorAll(".info-3")[0].dataset.swap="0";
+
+        document.querySelectorAll(".icon_1")[0].dataset.icon="1";
+        document.querySelectorAll(".icon_2")[0].dataset.icon="0";
+        document.querySelectorAll(".icon_3")[0].dataset.icon="0";
+
+        document.querySelectorAll(".bar_9")[0].dataset.bar="1";
+
+        info = "ข้อมูล1"
+    }
+
 }

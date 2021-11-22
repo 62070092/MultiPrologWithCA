@@ -7,7 +7,7 @@ body{
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
     font-size: 1rem;
-    overflow: hidden;
+    overflow: auto;
     background-position:center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -361,7 +361,7 @@ img{
 
 }
 /*star*/
-.star_1[data-star="0"]{
+/* .star_1[data-star="0"]{
     display: none;
 }
 
@@ -371,7 +371,44 @@ img{
 
 .star_3[data-star="0"]{
     display: none;
-}
+} */
 
 .star_icon{
+}
+
+/*i'm ready*/
+.bar.bar_8[data-bar="1"]{
+    height: 100%;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    background: #ff4754;
+}
+
+.bar.bar_8[data-bar="2"]{
+    height: 100%;
+    width: 2.5rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+/*ready*/
+.bar.bar_9[data-bar="1"]{
+    height: 100%;
+    width: 7.5rem;
+    border-radius: 0.5rem;
+    background: #ff4754;
+}
+
+.bar.bar_9[data-bar="2"]{
+    height: 100%;
+    width: 7rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+}
+
+.bar.bar_9[data-bar="3"]{
+    height: 100%;
+    width: 6.5rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
 }
