@@ -344,3 +344,31 @@ img{
     border-radius: 0.4rem;
     background: #ff4754;
 }
+
+/*otherbook จาก อาชีวะ*/
+.bar.bar_7[data-bar="1"]{
+    height: 100%;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+    background: #ff4754;
+}
+
+.bar.bar_7[data-bar="2"]{
+    height: 100%;
+    width: 2rem;
+    border-radius: 0.4rem;
+    background: #ff4754;
+
+}
+/*star*/
+.star_1[data-star="0"]{
+    display: none;
+}
+
+.star_2[data-star="0"]{
+    display: none;
+}
+
+.star_3[data-star="0"]{
+    display: none;
+}
