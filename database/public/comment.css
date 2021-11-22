@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap%27');
+
+body{
+    background-image: url('/Pay to Win/BG.jpg');
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1em;
+    overflow: auto;
+    background-position:center;
+    background-size: cover;
+}
+
+.ct-box{
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    padding: 1rem;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.logo-top-left{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    position: absolute;
+}
+
+.text-center{
+    text-align: center;  
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-name{
+    width: 60%;
+    height: 5vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    background-color: #f8f8f8;
+    border-style:hidden;
+}
+.form-comment{
+    width: 60%;
+    height: 30vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1vw;
+    background-color: #f8f8f8;
+    resize: none;
+    border-style:hidden;
+
+  }
+.padding-bottom{
+    padding-bottom: 1rem;
+}
+
+.btn-enter-web{
+    font-family: 'Bai Jamjuree', sans-serif;
+    border-radius: 250px;
+    padding: 0.3rem 1rem;
+    background-color: hsl(0, 100%, 100%);
+    border-color: transparent;
+    border-width: 0.2rem;
+    box-shadow: 4px 4px hsl(228, 82%, 51%);
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-enter-web:hover{
+    background-color: hsl(230, 100%, 71%);
+    border-color: transparent;
+    color: white;
+    
+}
+
+
+
+
+ table{
+     width: 80%;
+ }
+.table-bordered {
+    box-sizing: border-box;
+    border-collapse: separate;
+    border-spacing: 12px;
+}
+tr,td {
+    border: 1px solid #000000;
+    padding: 0.4rem 0.3rem;
+    border-radius: 0.5vw;
+    background-color: #ffffff;
+}
+
+/* table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+} */
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    .form-name{
+        width: 80%;
+        height: 8vh;
+    }
+    .form-comment{
+        width: 80%;
+        height: 35vh;
+    }
+}
