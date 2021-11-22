@@ -29,14 +29,20 @@ submitButton.addEventListener("click", (e) => {
     //save form data to firebase
     db.doc().set({
         comment: comment
+        
     }).then(()=>{
         console.log("Data saved")
+        
     }).catch((eror) => {
         console.log(error)
     })
-    alert("your comment has been success")
+    clearFields()
 })
 
-function eraseText() {
-    document.getElementById("comment").value = "";
+function clearFields() {
+    document.getElementById('comment').value = "";
+    
 }
+
+
+//---get dat---//
