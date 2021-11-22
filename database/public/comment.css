@@ -57,7 +57,9 @@ body{
 .padding-bottom{
     padding-bottom: 1rem;
 }
-
+.padding-top{
+    padding-top: 2rem;
+}
 .btn-enter-web{
     font-family: 'Bai Jamjuree', sans-serif;
     border-radius: 250px;
@@ -76,7 +78,9 @@ body{
     color: white;
     
 }
-
+.padding{
+    padding:0 1rem;
+}
 
 
 
@@ -95,29 +99,9 @@ tr,td {
     background-color: #ffffff;
 }
 
-/* table {
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    border-color: grey;
-}
-.table {
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #212529;
-}
-
-
-thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-} */
 
 @media (max-width: 500px) {
-    h1{
+    h2{
         font-size: 1.4rem;
     }
     .form-name{
@@ -127,5 +111,11 @@ thead {
     .form-comment{
         width: 80%;
         height: 35vh;
+    }
+    .padding{
+        padding:0 1.5rem;
+    }
+    .btn-enter-web{
+        font-size: 1rem;
     }
 }
