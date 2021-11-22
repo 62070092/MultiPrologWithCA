@@ -5,9 +5,8 @@ function submitComment(){
 
     localStorage.setItem("NAME", name);
     localStorage.setItem("COMMENT", comment);
-    
-    return;
 
+    return;
 }
 
 
