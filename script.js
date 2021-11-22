@@ -365,7 +365,10 @@ function swapInfo_10(){
 
 function choose(){
 
-    
+    const text = document.getElementById('text').value;
+
+    sessionStorage.setItem("TEXT", text);
+    window.location.href = ("school-type.html");
 
 
 
