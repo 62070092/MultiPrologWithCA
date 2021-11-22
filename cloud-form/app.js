@@ -46,22 +46,3 @@ function clearFields() {
 
 
 //---get dat---//
-function SelectAllData(){
-    firebase.database().ref('comment').once('value',
-    function(AllRecords){
-        AllRecords.foreach(
-            function(CurrentRecord){
-                var comment = CurrentRecord.val()
-                AddItemsToTable(comment);
-            }
-        );
-    });
-}
-//
-function AddItemsToTable(){
-    var tbody = document.getElementById('tbody');
-    var div1 = document.createElement('p');
-
-    trow.appendchild()
-
-}

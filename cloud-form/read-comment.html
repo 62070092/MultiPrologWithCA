@@ -1,24 +1,47 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>Cloud Form</title>
-    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 </head>
 
 <body>
     <div class="logo-top-left">
         <img src="/Pay to Win/ไฟล์ที่ใช้ในเว็บ/ptw mini logo.svg" width="50vw" height="auto">
     </div>
-    <div class="container">
-        <div id="tbody">
-                <p>
-                    hi
-                </p>
-        </div>
+    <div id="root">
+
     </div>
 
+
+
+
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAJ5JaS14iiUdZvad1lYI-KmC87xx_3V20",
+            authDomain: "pay-to-win-education.firebaseapp.com",
+            projectId: "pay-to-win-education",
+            storageBucket: "pay-to-win-education.appspot.com",
+            messagingSenderId: "296020543103",
+            appId: "1:296020543103:web:6ad0dcd6ab0234a0e5e14a"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        var firebaseRef = firebase.database().ref("comment");
+        firebaseRef.on("value", function(snapshot){
+            snapshot.forEach(function(element){
+                document.querySelector('#root').innerHTML +=`
+                    <div>${element.val()}</div>
+                `
+            });
+        })
+
+    </script>
 
 </body>
 
