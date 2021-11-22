@@ -73,3 +73,20 @@ textarea {
 .padding-top{
     padding-top: 2.5rem;
 }
+.comment{
+    width: 70%;
+    height: 35vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1.5vw;
+    background-color: #f8f8f8;
+
+}
+.name{
+    width: 70%;
+    height: 10vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1.5vw;
+    background-color: #f8f8f8;
+}

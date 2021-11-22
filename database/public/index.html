@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+  <link rel="stylesheet" href="comment.css">
+  <title>Chat room</title>
+  <!-- <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"/>
+</head> -->
+
+<body>
+  <div class="logo-top-left">
+    <img src="/Pay to Win/ไฟล์ที่ใช้ในเว็บ/ptw mini logo.svg" width="50vw" height="auto">
+  </div>
+  <div class="ct-box">
+    <h2 class="text-center">คุณเคยเจอสถานการณ์พร้อมเรียน<br>แต่ไม่พร้อมจ่ายบ้างมั้ย</h2>
+    <div>
+      <div class="flex-center padding-bottom">
+        <input class="form-name" id="idName" placeholder="Enter Name">
+      </div>
+      <div class="flex-center padding-bottom">
+        <textarea class="form-comment" id="idComment" name="comment-form"
+          placeholder="{ พิมพ์ประสบการของคุณ }"></textarea>
+        <!-- <input class="form-comment" rows="10" id="idComment" placeholder="Enter Message"> -->
+      </div>
+      <div class="flex-center ">
+        <button type="submit" class="btn-enter-web" id="commentBtn">ส่ง</button>
+      </div>
+      
+    </div>
+  </div>
+  <h2 class="text-center">COMMENT</h2>
+  <div class="ct-box flex-center">
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <!-- <tr>
+            <th>name</th>
+            <th>message</th>
+          </tr> -->
+        </thead>
+        <tbody id="dataRow">
+        </tbody>
+      </table>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAMoArDJ4h7ZkxzodFyOQCQERzPrwRYt-0",
+      authDomain: "database-62070158.firebaseapp.com",
+      databaseURL: "https://database-62070158.firebaseio.com",
+      projectId: "database-62070158",
+      storageBucket: "database-62070158.appspot.com",
+      messagingSenderId: "811870098130",
+      appId: "1:811870098130:web:275e38db5b51803e0fd30b",
+      measurementId: "G-W5K28Q2HSM"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+  <!--java script-->
+  <script>
+    let myFirebase = firebase.database();
+    let dataRef = myFirebase.ref('/guestbook');
+
+    document.getElementById("commentBtn").onclick = function () {
+
+      let lname = document.getElementById('idName').value;
+      let lcomment = document.getElementById('idComment').value;
+
+      dataRef.push({
+        name: lname,
+        comment: lcomment,
+      });
+    };
+  </script>
+  <script>
+    dataRef.limitToLast(5).on('child_added', function (childSnapshot) {
+      let item = childSnapshot.val()
+      document.getElementById('dataRow').innerHTML += "<tr><td>" + item.name + ":" + "</td><td>" +
+        item.comment + "</td></tr>"
+    });
+  </script>
+
+</body>
+
+</html>
