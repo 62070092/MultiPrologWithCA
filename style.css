@@ -217,42 +217,42 @@ img{
 /*school-type*/
 .bar.bar_1[data-bar="1"]{
     height: 100%;
-    width: 2rem;
+    width: 3.7rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_1[data-bar="2"]{
     height: 100%;
-    width: 2rem;
+    width: 3.7rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_1[data-bar="3"]{
     height: 100%;
-    width: 3rem;
+    width: 4rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 /*line_school*/
 .bar.bar_2[data-bar="1"]{
     height: 100%;
-    width: 2.5rem;
+    width: 3.5rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_2[data-bar="2"]{
     height: 100%;
-    width: 3rem;
+    width: 4rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_2[data-bar="3"]{
     height: 100%;
-    width: 3rem;
+    width: 4rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
@@ -260,14 +260,14 @@ img{
 /*private-school*/
 .bar.bar_3[data-bar="1"]{
     height: 100%;
-    width: 3.5rem;
+    width: 3.8rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_3[data-bar="2"]{
     height: 100%;
-    width: 4rem;
+    width: 4.2rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
@@ -282,51 +282,51 @@ img{
 /*Take-extar-class จาก อาชีวะ*/
 .bar.bar_4[data-bar="1"]{
     height: 100%;
-    width: 3rem;
+    width: 4.2rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_4[data-bar="2"]{
     height: 100%;
-    width: 2.5rem;
+    width: 4rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_4[data-bar="3"]{
     height: 100%;
-    width: 2rem;
+    width: 3.7rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
-/*course จาก อาชีวะ*/
+/*course*/
 .bar.bar_5[data-bar="1"]{
     height: 100%;
-    width: 3rem;
+    width: 4rem;
     border-radius: 0.5rem;
     background: #ff4754;
 }
 
 .bar.bar_5[data-bar="2"]{
     height: 100%;
-    width: 3.5rem;
+    width: 4.1rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
 .bar.bar_5[data-bar="3"]{
     height: 100%;
-    width: 4rem;
+    width: 4.2rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
-/*book จาก อาชีวะ*/
+/*book*/
 .bar.bar_6[data-bar="1"]{
     height: 100%;
-    width: 4rem;
+    width: 5rem;
     border-radius: 0.5rem;
     background: #ff4754;
 }
@@ -340,22 +340,22 @@ img{
 
 .bar.bar_6[data-bar="3"]{
     height: 100%;
-    width: 7rem;
+    width: 7.5rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
 
-/*otherbook จาก อาชีวะ*/
+/*otherbook*/
 .bar.bar_7[data-bar="1"]{
     height: 100%;
-    width: 3.5rem;
+    width: 4.5rem;
     border-radius: 0.5rem;
     background: #ff4754;
 }
 
 .bar.bar_7[data-bar="2"]{
     height: 100%;
-    width: 2rem;
+    width: 4rem;
     border-radius: 0.4rem;
     background: #ff4754;
 
@@ -374,5 +374,4 @@ img{
 }
 
 .star_icon{
-    
 }
