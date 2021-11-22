@@ -115,3 +115,17 @@ thead {
     vertical-align: middle;
     border-color: inherit;
 } */
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    .form-name{
+        width: 80%;
+        height: 8vh;
+    }
+    .form-comment{
+        width: 80%;
+        height: 35vh;
+    }
+}
