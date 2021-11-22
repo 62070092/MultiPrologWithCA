@@ -1,5 +1,4 @@
 let info = "ข้อมูล1";
-var i = 0;
 
 function swapInfo(){
     if(info === "ข้อมูล1"){
@@ -7,8 +6,6 @@ function swapInfo(){
         document.querySelectorAll(".info-2")[0].dataset.swap="1";
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
-
-
         info = "ข้อมูล2"
 
     }
@@ -366,3 +363,10 @@ function swapInfo_10(){
 
 }
 
+function choose(){
+
+    
+
+
+
+}
