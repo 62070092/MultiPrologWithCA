@@ -295,3 +295,38 @@ function swapInfo_8(){
     }
   
 }
+
+
+
+
+// star function
+
+let star = "star_one"
+
+function starInfo(){
+    if(info === "star_one"){
+        document.querySelectorAll(".star_1")[0].dataset.swap="0";
+        document.querySelectorAll(".star_2")[0].dataset.swap="1";
+        document.querySelectorAll(".star_3")[0].dataset.swap="0";
+
+
+        info = "star_two"
+    }
+    else if(info === "star_two"){
+        document.querySelectorAll(".star_1")[0].dataset.swap="0";
+        document.querySelectorAll(".star_2")[0].dataset.swap="0";
+        document.querySelectorAll(".star_3")[0].dataset.swap="1";
+
+
+        info = "star_three"
+    }
+    else if(info === "star_three"){
+        document.querySelectorAll(".star_1")[0].dataset.swap="1";
+        document.querySelectorAll(".star_2")[0].dataset.swap="0";
+        document.querySelectorAll(".star_3")[0].dataset.swap="0";
+
+
+
+        info = "star_one"
+    }
+}
