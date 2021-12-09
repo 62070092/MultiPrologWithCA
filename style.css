@@ -4,6 +4,7 @@
 
 body{
     background-image: url('Pay to Win/BG.jpg');
+    background-color: hsl(139, 100%, 70%);
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
     font-size: 1rem;

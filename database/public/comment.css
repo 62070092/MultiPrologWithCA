@@ -3,6 +3,7 @@
 
 body{
     background-image: url('/Pay to Win/BG.jpg');
+    background-color: hsl(139, 100%, 70%);
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 1em;
     overflow: auto;
