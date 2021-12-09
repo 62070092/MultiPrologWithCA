@@ -4,6 +4,7 @@
 
 body{
     background-image: url('Pay to Win/BG.jpg');
+    background-color: hsl(139, 100%, 70%);
     font-family: 'Bai Jamjuree', sans-serif;
     display: flex;
     font-size: 1rem;
@@ -54,6 +55,25 @@ img{
     font-weight: bold;
 }
 .btn-enter-web:hover{
+    background-color: hsl(230, 100%, 71%);
+    border-color: transparent;
+    color: white;
+    
+}
+/* แก้บัคหน้าprice-conclusion */
+.btn-enter-web-price{
+    font-family: 'Bai Jamjuree', sans-serif;
+    border-radius: 250px;
+    padding: 0.3rem 3rem;
+    background-color: hsl(0, 100%, 100%);
+    border-color: transparent;
+    border-width: 0.2rem;
+    box-shadow: 4px 4px hsl(228, 82%, 51%);
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn-enter-web-price:hover{
     background-color: hsl(230, 100%, 71%);
     border-color: transparent;
     color: white;
@@ -212,7 +232,11 @@ img{
     width: 1rem;
     border-radius: 0.4rem;
     background: #ff4754;
+
 }
+
+  
+
 
 /*school-type*/
 .bar.bar_1[data-bar="1"]{
@@ -340,7 +364,7 @@ img{
 
 .bar.bar_6[data-bar="3"]{
     height: 100%;
-    width: 7.5rem;
+    width: 7.3rem;
     border-radius: 0.4rem;
     background: #ff4754;
 }
@@ -397,7 +421,7 @@ img{
 .bar.bar_9[data-bar="1"]{
     height: 100%;
     width: 7.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     background: #ff4754;
 }
 
@@ -418,7 +442,9 @@ img{
 #one_350k{
     width: auto;
 }
-
+.padding{
+    padding:0 1rem;
+}
 
 @media (max-width: 1024px) {
     body{
@@ -448,6 +474,9 @@ img{
 }
 
 @media (max-width: 500px) {
+    body{
+        font-size: 0.9rem;
+    }
     h1{
         font-size: 1.4rem;
     }
@@ -455,4 +484,9 @@ img{
         height: 23vh;
         width: auto;
     }
+    .btn-enter-web-price{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.7rem;
+    }
 }
+
