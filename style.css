@@ -439,12 +439,12 @@ img{
     background: #ff4754;
 }
 
-/* @media {
+@media {
     .main-image{
         height: 30vh;
         width: auto;
     }
-} */
+}
 .padding{
     padding:0 1rem;
 }
