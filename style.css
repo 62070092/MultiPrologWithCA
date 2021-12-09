@@ -235,11 +235,11 @@ img{
     }
 
     .btn.btn-left{
-    left: 20%;
-}
+        left: 20%;
+    }
     .btn.btn-right{
-    right: 20%;
-}
+        right: 20%;
+    }
     
 }
 
