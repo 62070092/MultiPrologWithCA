@@ -366,3 +366,9 @@ function swapInfo_10(){
 
 }
 
+function one(){
+    window.location.href = ("school-type.html");
+    document.getElementById("one_350k").innerHTML = "Hoooooooooo";
+}
+
+

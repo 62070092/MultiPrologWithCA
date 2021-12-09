@@ -415,11 +415,8 @@ img{
     background: #ff4754;
 }
 
-@media {
-    .main-image{
-        height: 30vh;
-        width: auto;
-    }
+#one_350k{
+    width: auto;
 }
 
 
