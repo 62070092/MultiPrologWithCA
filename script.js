@@ -30,8 +30,6 @@ function swapInfo_2(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_1")[0].dataset.bar="2";
-
         info = "ข้อมูล2"
     }
     else if(info === "ข้อมูล2"){
@@ -43,8 +41,6 @@ function swapInfo_2(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_1")[0].dataset.bar="3";
-
         info = "ข้อมูล3"
     }
     else if(info === "ข้อมูล3"){
@@ -55,8 +51,6 @@ function swapInfo_2(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="1";
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
-
-        document.querySelectorAll(".bar_1")[0].dataset.bar="1";
 
         info = "ข้อมูล1"
     }
@@ -72,8 +66,6 @@ function swapInfo_3(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
-
-        document.querySelectorAll(".bar_2")[0].dataset.bar="2";
         info = "ข้อมูล2"
     }
     else if(info === "ข้อมูล2"){
@@ -84,8 +76,6 @@ function swapInfo_3(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
-
-        document.querySelectorAll(".bar_2")[0].dataset.bar="3";
         info = "ข้อมูล3"
     }
     else if(info === "ข้อมูล3"){
@@ -97,7 +87,6 @@ function swapInfo_3(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_2")[0].dataset.bar="1";
         info = "ข้อมูล1"
     }
 
@@ -113,7 +102,7 @@ function swapInfo_4(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_3")[0].dataset.bar="2";
+
         info = "ข้อมูล2"
     }
     else if(info === "ข้อมูล2"){
@@ -125,7 +114,7 @@ function swapInfo_4(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_3")[0].dataset.bar="3";
+
         info = "ข้อมูล3"
     }
     else if(info === "ข้อมูล3"){
@@ -137,7 +126,7 @@ function swapInfo_4(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_3")[0].dataset.bar="1";
+
         info = "ข้อมูล1"
     }
 
@@ -153,7 +142,7 @@ function swapInfo_5(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_4")[0].dataset.bar="2";
+
 
         info = "ข้อมูล2"
     }
@@ -166,7 +155,7 @@ function swapInfo_5(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_4")[0].dataset.bar="3";
+
 
         info = "ข้อมูล3"
     }
@@ -178,8 +167,6 @@ function swapInfo_5(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="1";
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
-
-        document.querySelectorAll(".bar_4")[0].dataset.bar="1";
 
         info = "ข้อมูล1"
     }
@@ -196,7 +183,7 @@ function swapInfo_6(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_5")[0].dataset.bar="2";
+
 
         info = "ข้อมูล2"
     }
@@ -209,7 +196,6 @@ function swapInfo_6(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_5")[0].dataset.bar="3";
 
         info = "ข้อมูล3"
     }
@@ -222,7 +208,7 @@ function swapInfo_6(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_5")[0].dataset.bar="1";
+
 
         info = "ข้อมูล1"
     }
@@ -239,7 +225,7 @@ function swapInfo_7(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_6")[0].dataset.bar="2";
+
 
         info = "ข้อมูล2"
     }
@@ -252,7 +238,7 @@ function swapInfo_7(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_6")[0].dataset.bar="3";
+
 
         info = "ข้อมูล3"
     }
@@ -265,7 +251,7 @@ function swapInfo_7(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_6")[0].dataset.bar="1";
+
 
         info = "ข้อมูล1"
     }
@@ -279,7 +265,7 @@ function swapInfo_8(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_7")[0].dataset.bar="2";
+
 
         info = "ข้อมูล2"
 
@@ -290,7 +276,7 @@ function swapInfo_8(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="1";
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_7")[0].dataset.bar="1";
+
         info = "ข้อมูล1"
     }
   
@@ -303,7 +289,7 @@ function swapInfo_9(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="0";
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_8")[0].dataset.bar="2";
+
 
         info = "ข้อมูล2"
 
@@ -314,7 +300,7 @@ function swapInfo_9(){
         document.querySelectorAll(".icon_1")[0].dataset.icon="1";
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_8")[0].dataset.bar="1";
+
         info = "ข้อมูล1"
     }
 
@@ -331,7 +317,7 @@ function swapInfo_10(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="1";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_9")[0].dataset.bar="2";
+
 
         info = "ข้อมูล2"
     }
@@ -344,7 +330,6 @@ function swapInfo_10(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="1";
 
-        document.querySelectorAll(".bar_9")[0].dataset.bar="3";
 
         info = "ข้อมูล3"
     }
@@ -357,7 +342,7 @@ function swapInfo_10(){
         document.querySelectorAll(".icon_2")[0].dataset.icon="0";
         document.querySelectorAll(".icon_3")[0].dataset.icon="0";
 
-        document.querySelectorAll(".bar_9")[0].dataset.bar="1";
+
 
         info = "ข้อมูล1"
     }
