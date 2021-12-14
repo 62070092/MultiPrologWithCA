@@ -1,4 +1,3 @@
-
 window.addEventListener('load', () => {
     
     const text = localStorage.getItem('NAME');

@@ -42,6 +42,9 @@ img{
 .text-left{
     text-align: left;
 }
+.over{
+    overflow-y: scroll ;
+}
 .btn-enter-web{
     font-family: 'Bai Jamjuree', sans-serif;
     border-radius: 250px;
@@ -106,6 +109,9 @@ img{
     right: 30%;
 }
 
+.btn_2{
+    top : 120%
+}
 .text-box{
     font-family: 'Bai Jamjuree', sans-serif;
     background-color: white;
@@ -119,8 +125,11 @@ img{
     width: 20px;
     height: auto;
     padding: 0 1rem;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(346deg) brightness(100%) contrast(100%);
 }
-
+.icon-red{
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
 /*swapping info*/
 
 .info-1[data-swap="0"]{
@@ -130,24 +139,32 @@ img{
     display: none;
 }
 
+
+
 .info-3[data-swap="0"]{
     display: none;
 }
+.info-4[data-swap="0"]{
+    display: none;
+}
 
-/*dataset icon*/
-.icon{
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(346deg) brightness(100%) contrast(100%);
+.info-5[data-swap="0"]{
+    display: none;
 }
-.icon.icon_1[data-icon="1"]{
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+
+
+.info-6[data-swap="0"]{
+    display: none;
 }
-.icon.icon_2[data-icon="1"]{
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+.info-7[data-swap="0"]{
+    display: none;
 }
-.icon.icon_3[data-icon="1"]{
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+
+.info-8[data-swap="0"]{
+    display: none;
 }
-/* -------------------- */
+
+
 .text-price{
     color: red;
     text-align: left;
@@ -252,8 +269,7 @@ img{
 }
     h1{
         font-size: 1.4rem;
-    }
-    
+    }  
 }
 
 @media (max-width: 500px) {
@@ -289,4 +305,81 @@ img{
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+/*----------------------------------*/
+#country-or-abroad[data-show="0"]{
+    display: none;
+}
+
+#school-type[data-show="0"]{
+    display: none;
+}
+
+#occupational[data-show="0"]{
+    display: none;
+}
+
+#line-of-study[data-show="0"]{
+    display: none;
+}
+
+#private-school[data-show="0"]{
+    display: none;
+}
+
+#abroad[data-show="0"]{
+    display: none;
+}
+
+#go-abroad[data-show="0"]{
+    display: none;
+}
+
+#course_offering[data-show="0"]{
+    display: none;
+}
+
+#are-you-sure[data-show="0"]{
+    display: none;
+}
+
+#tutor[data-show="0"]{
+    display: none;
+}
+
+#extra-class[data-show="0"]{
+    display: none;
+}
+
+#course[data-show="0"]{
+    display: none;
+}
+
+#otherbook[data-show="0"]{
+    display: none;
+}
+
+#book[data-show="0"]{
+    display: none;
+}
+
+#r-u-sure[data-show="0"]{
+    display: none;
+}
+
+#one-star[data-show="0"]{
+    display: none;
+}
+
+#two-star[data-show="0"]{
+    display: none;
+}
+
+#three-star[data-show="0"]{
+    display: none;
+}
+
+#price-conclusion[data-show="0"]{
+    display: none;
 }
