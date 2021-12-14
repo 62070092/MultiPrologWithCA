@@ -15,7 +15,7 @@
     </div>
     <div class="container">
       
-      <div class="choice" id="country-or-abroad" data-show="1">
+      <div class="choice" id="country-or-abroad" data-show="0">
         <!-- ปุ่ม -->
         <a>
           <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo('country-or-abroad')">
@@ -35,7 +35,7 @@
             <br>
             <div class="flex-center">
               <div class="text-box">
-                <p>ในประเทศ</p>
+                <p class="country">ในประเทศ</p>
               </div>
             </div>
             <br>
@@ -50,7 +50,7 @@
             </div>
             <br>
             <div class="flex-center"> 
-              <button type="button" class="btn-enter-web choose" onclick="goto('school-type')">เลือก</button>
+              <button type="button" class="btn-enter-web" onclick="goto('school-type') ; choose_choice(1)">เลือก</button>
             </div>
           </div>
 
@@ -62,7 +62,7 @@
             <br>
             <div class="flex-center">
               <div class="text-box">
-                <p>ต่างประเทศ</p>
+                <p class="out-country">ต่างประเทศ</p>
               </div>
             </div>
             <br>
@@ -77,7 +77,7 @@
             </div>
             <br>
             <div class="flex-center">
-              <button type="button" class="btn-enter-web choose" onclick="goto('abroad')">เลือก</button>
+              <button type="button" class="btn-enter-web" onclick="goto('abroad') ; choose_choice(2)">เลือก</button>
             </div>
           </div>
       </div>
@@ -102,7 +102,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>อาชีววิกรม</p>
+              <p class="school-T">อาชีววิกรม</p>
             </div>
           </div>
           <br>
@@ -121,7 +121,7 @@
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('occupational')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('occupational') ; choose_choice(3)">เลือก</button>
           </div>
         </div>
 
@@ -132,7 +132,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>รัฐบาลแกล้วกล้า</p>
+              <p class="school-T">รัฐบาลแกล้วกล้า</p>
             </div>
           </div>
           <br>
@@ -152,7 +152,7 @@
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('line-of-study')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('line-of-study') ; choose_choice(4)">เลือก</button>
           </div>
         </div>
 
@@ -163,7 +163,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>โรงเรียนเอกชน</p>
+              <p class="school-T">โรงเรียนเอกชน</p>
             </div>
           </div>
           <br>
@@ -182,7 +182,7 @@
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('private-school')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('private-school') ; choose_choice(5)">เลือก</button>
           </div>
         </div>
       </div>
@@ -236,7 +236,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>ศิลป์คำนวณ - ภาษา</p>
+              <p class="study-line">ศิลป์คำนวณ - ภาษา</p>
             </div>
           </div>
           <br>
@@ -250,12 +250,12 @@
             <div class="text-left">
               <p class="text-left">เรียนตามหลักสูตรทั่วไป ขึ้นอยู่กับสายที่คุณต้องการศึกษา อาจจะได้ <br>เจอเพื่อนๆ หลากหลายรูปแบบกับอาจารย์ที่อยากสอนบ้าง บางวัน
                 <br>ก็ไม่อยากสอนบ้าง แต่โดยรวมแล้วก็เป็นหนทางที่ดีนะ! แถมถูกด้วย</p>
-                <p class="text-price">9,000 บาทต่อ 3 ปี</p>
+                <p class="text-price line-price">9,000 บาทต่อ 3 ปี</p>
             </div>
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(6)">เลือก</button>
           </div>
         </div>
 
@@ -266,7 +266,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>โครงการพิเศษ</p>
+              <p class="study-line line-price">โครงการพิเศษ</p>
             </div>
           </div>
           <br>
@@ -287,7 +287,7 @@
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(7)">เลือก</button>
           </div>
         </div>
 
@@ -299,7 +299,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>EP & IEP</p>
+              <p class="study-line line-price">EP & IEP</p>
             </div>
           </div>
           <br>
@@ -319,7 +319,7 @@
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(8)">เลือก</button>
           </div>
         </div>
       </div>
@@ -344,7 +344,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>เอกชนปัญญา</p>
+              <p class="school-line">เอกชนปัญญา</p>
             </div>
           </div>
           <br>
@@ -360,12 +360,12 @@
                 และสภาพแวดล้อมที่ส่งเสริมในการเรียน ถึงแม้ว่าหลักสูตรจะไม่ได้ <br>
               เข้มข้นเหมือนโรงเรียนวิทยเอกชนแต่รับรองได้เลยว่าคุณนั้นจะมี
               <br>คุณภาพชีวิตที่ดีอย่างแน่นอน! </p>
-              <p class="text-price">350,000 บาทต่อ 3 ปี</p>
+              <p class="text-price line-price">350,000 บาทต่อ 3 ปี</p>
             </div>
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(9)">เลือก</button>
           </div>
         </div>
 
@@ -376,7 +376,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>วิทยเอกชน</p>
+              <p class="school-line">วิทยเอกชน</p>
             </div>
           </div>
           <br>
@@ -392,12 +392,12 @@
                 ผลิตนักวิจัยและนักวิทยาศาสตร์ออกมาอย่างมากมาย ทั้งยัง <br>
                 การันตีถึงผลงานในทุกๆ ด้าน เรียกได้ว่าหากได้มาเรียนที่นี่ <br>
                 คุณจะกลายเป็น หนึ่งในหัวกะทิของประเทศชาติได้อย่างแน่นอน!</p>
-                <p class="text-price">540,000 บาทต่อ 3 ปี</p>
+                <p class="text-price line-price">540,000 บาทต่อ 3 ปี</p>
             </div>
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(10)">เลือก</button>
           </div>
         </div>
 
@@ -408,7 +408,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>เอกชนนานาชาติ</p>
+              <p class="school-line">เอกชนนานาชาติ</p>
             </div>
           </div>
           <br>
@@ -424,12 +424,12 @@
                 เอกชนนานาชาตินั้นเป็นคำตอบของคุณ! ด้วยหลักสูตรการเรียน <br>
                 การสอนเข้มข้นที่ถูกสอนควบคู่สองภาษาโดยผู้เชี่ยวชาญ การไป <br>
                 ทำงานที่ต่างประเทศถือว่าไม่ใช่ความฝันที่ไกลเกินเอื้อมเลย</p>
-                <p class="text-price">2,220,000 บาทต่อ 3 ปี</p>
+                <p class="text-price line-price">2,220,000 บาทต่อ 3 ปี</p>
             </div>
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(11)">เลือก</button>
           </div>
         </div>
 
@@ -673,7 +673,7 @@
           </div>
         </div>
         <br>
-        <div class="padding-left" style="margin-left: 8.5vw ; cursor: pointer; color: red;">
+        <div class="padding-left" style="margin-left: 8.5vw ; cursor: pointer; color: blue;">
           <p onclick="goto('course_offering')"> << ขอกลับไปเลือกใหม่</p>
         </div>
       </div>
@@ -725,7 +725,7 @@
             <br>
             <div class="flex-center">
                 <div class="text-box">
-                    <p>เรียนกับติวเตอร์</p>
+                    <p class="take-class">เรียนกับติวเตอร์</p>
                 </div>
             </div>
             <br>
@@ -741,12 +741,12 @@
                         <br>มีข้อได้เปรียบตรงสงสัยอะไรตรงไหนก็ถามได้ในทันที ขอให้เน้น
                         <br>ตรงไหน ก็เน้นได้ตามสั่ง แต่ไม่รู้จะสู้กับการเรียนกับที่ติวดังๆ <br> ได้ไหมน่ะสิ . . .
                     </p>
-                    <p class="text-price">57,600 บาทต่อ 3 ปี</p>
+                    <p class="text-price class-price">57,600 บาทต่อ 3 ปี</p>
                 </div>
             </div>
             <br>
             <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('otherbook')">เลือก</button>
+                <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(12)">เลือก</button>
             </div>
         </div>
 
@@ -757,7 +757,7 @@
             <br>
             <div class="flex-center">
                 <div class="text-box">
-                    <p>เรียนกับวิดีโอ</p>
+                    <p class="take-class">เรียนกับวิดีโอ</p>
                 </div>
             </div>
             <br>
@@ -775,7 +775,7 @@
             </div>
             <br>
             <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('course')">ไปเลือกคอร์สติว</button>
+                <button type="button" class="btn-enter-web" onclick="goto('course') ; choose_choice(13)">ไปเลือกคอร์สติว</button>
             </div>
         </div>
 
@@ -786,7 +786,7 @@
             <br>
             <div class="flex-center">
                 <div class="text-box">
-                    <p>ไม่เรียนพิเศษ</p>
+                    <p class="take-class">ไม่เรียนพิเศษ</p>
                 </div>
             </div>
             <br>
@@ -804,7 +804,7 @@
             </div>
             <br>
             <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('otherbook')">เลือก</button>
+                <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(14)">เลือก</button>
             </div>   
         </div>
       </div>
@@ -829,7 +829,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>คอร์สต้นอ่อน</p>
+              <p class="course-line">คอร์สต้นอ่อน</p>
             </div>
           </div>
           <br>
@@ -843,13 +843,13 @@
             <div class="text-left">
               <p class="text-left">‘คอร์สปูพื้นฐานจำเป็นสำหรับสอบเข้ามหาลัย ไม่เข้มข้นเท่าไหร่ 
                 <br>แต่สบายกระเป๋า!’</p>
-                <p class="text-price">20,000 บาท</p>
+                <p class="text-price course-price">20,000 บาท</p>
                 <p class="text-small">*โอกาสสอบติดขึ้นอยู่กับความเก่งติดตัว</p>
             </div>
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('otherbook')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(15)">เลือก</button>
           </div>
         </div>
 
@@ -860,7 +860,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>คอร์สสมใจหวัง</p>
+              <p class="course-line">คอร์สสมใจหวัง</p>
             </div>
           </div>
           <br>
@@ -873,12 +873,12 @@
           <div class="flex-center">
             <div class="text-left">
               <p class="text-left">'คอร์สเรียน ติวเนื้อหาสอบเข้ามหาลัยอย่างเข้มข้นเหมาะสำหรับ <br>เด็ก ม.6 ที่กำลังพยายามยัดความรู้เข้าสมองก่อนเข้าสู่สนามสอบ <br>ในเวลาที่จำกัด เพื่อมหาลัยในฝันที่ไม่ไกลเกินเอื้อม!'</p>
-              <p class="text-price">78,100 บาท</p>
+              <p class="text-price course-price">78,100 บาท</p>
             </div>
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('otherbook')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(16)">เลือก</button>
           </div>
         </div>
 
@@ -889,7 +889,7 @@
           <br>
           <div class="flex-center">
             <div class="text-box">
-              <p>คอร์สสร้างแชมป์</p>
+              <p class="course-line">คอร์สสร้างแชมป์</p>
             </div>
           </div>
           <br>
@@ -901,7 +901,7 @@
           <div class="flex-center">
             <div class="text-left">
               <p class="text-left">‘คอร์สเพิ่มผลการเรียน ติวเข้มเนื้อหาตั้งแต่ ม. 4 - เตรียมเข้ามหาลัย <br>สำหรับน้องๆ ที่อยากได้ทั้งเกรดทั้งมหาลัยในฝัน’</p>
-              <p class="text-price">164,100 บาท</p>
+              <p class="text-price course-price">164,100 บาท</p>
               <p class="text-small">*เหมาะสำหรับคนพร้อมเรียนพิเศษ 6 ช.ม. ต่อวัน
                 <br>** อาจเรียนไม่ทันถ้าไม่เริ่มตั้งแต่ตอน ม.4 
                 <br>***เรียนไม่ไหว เราไม่คืนเงิน</p>
@@ -909,7 +909,7 @@
           </div>
           <br>
           <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('otherbook')">เลือก</button>
+            <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(17)">เลือก</button>
           </div>
         </div>
       </div>
@@ -935,7 +935,7 @@
             <br>
             <div class="flex-center">
                 <div class="text-box">
-                    <p>ซื้อเพิ่ม</p>
+                    <p class="other-book">ซื้อเพิ่ม</p>
                 </div>
             </div>
             <br>
@@ -951,7 +951,7 @@
             </div>
             <br>
             <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('book')">เลือก</button>
+                <button type="button" class="btn-enter-web" onclick="goto('book') ; choose_choice(18)">เลือก</button>
             </div>
         </div>
 
@@ -962,7 +962,7 @@
             <br>
             <div class="flex-center">
                 <div class="text-box">
-                    <p>ไม่ซื้อเพิ่ม</p>
+                    <p class="other-book">ไม่ซื้อเพิ่ม</p>
                 </div>
             </div>
             <br>
@@ -977,7 +977,7 @@
             </div>
             <br>
             <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+                <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(19)">เลือก</button>
             </div>
         </div>
       </div>
@@ -1113,10 +1113,11 @@
         <br>
         <div class="flex-center">
             <div >
-                <button type="button" class="btn-enter-web-price" onclick="location.href='2-star.html'">แน่ใจ</button>
+                <button type="button" class="btn-enter-web-price" onclick="goto('one-star')">แน่ใจ</button>
             </div>
         </div>
-        <div class="padding-left" style="margin-left: 5vw ; cursor: pointer; color: red;">
+        <br>
+        <div class="padding-left" style="margin-left: 6vw ; cursor: pointer; color: blue;">
           <p onclick="goto('country-or-abroad')"> << ขอเลือกใหม่</p>
         </div>
       </div>
@@ -1216,7 +1217,7 @@
         </div>
       </div>
 
-      <div class="choice" id="price-conclusion" data-show="0">
+      <div class="choice" id="price-conclusion" data-show="1">
         <div class="flex-center">
           <h2 class="text-center">
             สรุปค่าใช้จ่ายสำหรับการศึกษาของคุณ
@@ -1227,40 +1228,44 @@
           <div class="card-container">
             <div class="grid-parent-bill">
               <div class="column-1 text-left">
-                <b><p>ในประเทศ</p></b>
-                <b><p>โรงเรียนเครือเอกชน</p></b>
-                <p>เอกชนนานาชาติ </p>
-                <b><p>เรียนพิเศษ</p></b>
-                <b><p>เรียนกับวิดีโอ</p></b>
-                <p>คอร์สสร้างแชมป์</p>
-                <b><p>ซื้อหนังสือจิปาถะอื่นๆ</p></b>
+                <p></p>
+                <b><span id="result-country"></span></b>
+                <b><p>
+                  <span id="result-school-type"></span>
+                </p></b>
+                <p><span id="result-study-line"></span></p>
+                <b><p>
+                  <span id="result-take-class"></span>
+                </p></b>
+                <b><p><span id="result-course-line"></span></p></b>
+                <p><span id=""></span></p>
+                <b><p><span id="result-other-book"></span></p></b>
                 <p>SET ติด!</p>
                 <br>
-                <b><p>รวมทั้งหมด</p></b>
-                <b><p>หรือ</p></b> 
+                
     
             </div>
             <div class="column-2 text-right">
                 <p>.</p>
                 <p>.</p>
-                <p>2,220,000 บาท</p>
+                <p><span id="study-line-price"></span></p>
+                <p><span id="study-line-price"></span></p>
                 <p>.</p>
+                <p><span id="result-course-price"></span></p>
                 <p>.</p>
-                <p>164,100 บาท</p>
-                <p>.</p>
-                <p>21,000 บาท</p>
+                <p></p>
                 <br>
-                <b><p class="red-font">2,405,100 บาทต่อ 3 ปี</p></b>
-                <b><p class="red-font">400,850 บาทต่อเทอม</p></b>
+                
             </div>
             </div>
           </div>
         </div>
         <div class="flex-center padding-t-b">
-          <button type="button" class="btn-enter-web-price" onclick="location.href='country-or-abroad.html'">ขอเลือกใหม่</button>
           <div class="padding"></div>
-          <button type="button" class="btn-enter-web-price" onclick="location.href='are_u_ready_to_pay.html'">คุณพร้อมจะจ่ายแล้วหรือยัง</button>
-    
+          <button type="button" class="btn-enter-web-price" onclick="location.href='end-page.html'">พร้อมที่จะจ่าย</button>
+        </div>
+        <div class="padding-left" style="margin-left: 5vw ; cursor: pointer; color: blue;">
+          <p onclick="goto('country-or-abroad')"> << ขอเลือกใหม่</p>
         </div>
       </div>
 
