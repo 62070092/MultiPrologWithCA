@@ -21,7 +21,7 @@
   </div>
   <div class="container">
 
-    <div class="choice" id="country-or-abroad" data-show="1">
+    <div class="choice" id="country-or-abroad" data-show="0">
       <!-- ปุ่ม -->
       <a>
         <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
@@ -540,7 +540,7 @@
         </div>
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('go-abroad')">Choose</button>
+          <button type="button" class="btn-enter-web" onclick="goto('go-abroad') ; choose_choice(23)">Choose</button>
         </div>
       </div>
 
@@ -571,7 +571,7 @@
         </div>
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('course_offering')">เลือก</button>
+          <button type="button" class="btn-enter-web" onclick="goto('course_offering') ; choose_choice(24)">เลือก</button>
         </div>
       </div>
     </div>
@@ -620,7 +620,7 @@
         </div>
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(25)">เลือก</button>
         </div>
       </div>
 
@@ -651,7 +651,7 @@
         </div>
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(26)">เลือก</button>
         </div>
       </div>
 
@@ -681,12 +681,12 @@
         </div>
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(27)">เลือก</button>
         </div>
       </div>
     </div>
 
-    <div class="choice" id="course_offering" data-show="0">
+    <div class="choice offering" id="course_offering" data-show="0">
       <div class="flex-center">
         <img class="logo-1" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนต่างประเทศ\course offering.PNG">
 
@@ -716,16 +716,16 @@
             <p>8,000 Baht</p>
             <p>14,000 Baht</p>
           </div>
-          <p class="text-price">รวมประมาณ 75,300 Baht</p>
+          <p class="text-price off-price">รวมประมาณ 75,300 Baht</p>
         </div>
       </div>
 
       <div class="flex-center padding-t-b">
         <div>
-          <button type="button" class="btn-enter-web" onclick="goto('go-abroad')">Accept</button>
+          <button type="button" class="btn-enter-web" onclick="goto('go-abroad') ; choose_choice(28)">Accept</button>
         </div>
         <div class="padding-left">
-          <button type="button" class="btn-enter-web" onclick="goto('are-you-sure')">Decline</button>
+          <button type="button" class="btn-enter-web" onclick="goto('are-you-sure') ; choose_choice(1)">Decline</button>
         </div>
       </div>
     </div>
@@ -1116,7 +1116,7 @@
         <br>
         <div class="flex-center">
           <div class="text-box">
-            <p>SET ติด?</p>
+            <p class="buy-book">SET ติด?</p>
           </div>
         </div>
         <br>
@@ -1132,13 +1132,13 @@
               โอกาสสอบติดในภายหลัง ด้วยผลการสอบติดที่ได้รับการยืนยัน<br>
               ว่าเพิ่มขึ้นจริง 10%!'
             </p>
-            <p class="text-price" style="color: red;">3,500 บาท</p>
+            <p class="text-price book-price" style="color: red;">3,500 บาท</p>
           </div>
         </div>
 
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(20)">เลือก</button>
         </div>
       </div>
 
@@ -1150,7 +1150,7 @@
         <br>
         <div class="flex-center">
           <div class="text-box">
-            <p>SET ติด</p>
+            <p class="buy-book">SET ติด</p>
           </div>
         </div>
         <br>
@@ -1165,13 +1165,13 @@
             <p>'เซ็ตหนังสือติวตะลุยโจทย์ข้อสอบปีก่อนๆ ที่จะช่วยให้คุณเข้าใจใน <br>
               เทคนิคลัดและทำข้อสอบได้ผ่านฉลุย แต่ไม่รู้ว่าจะพอสำหรับคณะ <br>
               ที่คุณหวังไว้หรือเปล่านะ'</p>
-            <p class="text-price">9,900 บาท</p>
+            <p class="text-price book-price">9,900 บาท</p>
           </div>
         </div>
 
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(21)">เลือก</button>
         </div>
       </div>
 
@@ -1183,7 +1183,7 @@
         <br>
         <div class="flex-center">
           <div class="text-box">
-            <p>SET ติด!</p>
+            <p class="buy-book">SET ติด!</p>
           </div>
         </div>
         <br>
@@ -1199,12 +1199,12 @@
               ที่มีทั้งหนังสือตะลุยโจทย์และหนังสือสรุปเนื้อหา รับประกันได้เลยว่า <br>
               ถ้ามีเอาไว้ โอกาสติดคณะในฝันเพิ่มขึ้นอย่างแน่นอน!'
             </p>
-            <p class="text-price" style="color: red;">21,000 บาท</p>
+            <p class="text-price book-price" style="color: red;">21,000 บาท</p>
           </div>
         </div>
         <br>
         <div class="flex-center">
-          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(22)">เลือก</button>
         </div>
       </div>
     </div>
@@ -1232,7 +1232,7 @@
       <br>
       <div class="flex-center">
         <div>
-          <button type="button" class="btn-enter-web-price" onclick="goto('one-star')">แน่ใจ</button>
+          <button type="button" class="btn-enter-web-price" onclick="goto('three-star')">แน่ใจ</button>
         </div>
       </div>
       <br>
@@ -1337,7 +1337,7 @@
       </div>
     </div>
 
-    <div class="choice" id="price-conclusion" data-show="0">
+    <div class="choice" id="price-conclusion" data-show="1">
       <div class="flex-center">
         <h2 class="text-center">
           สรุปค่าใช้จ่ายสำหรับการศึกษาของคุณ
@@ -1355,20 +1355,19 @@
                   <span id="result-school-type"></span>
                 </p>
               </b>
+              <p><span id="result-offering"></span></p>
               <p><span id="result-study-line"></span></p>
               <b>
                 <p>
                   <span id="result-take-class"></span>
                 </p>
               </b>
-              <b>
-                <p><span id="result-course-line"></span></p>
-              </b>
-              <p><span id=""></span></p>
+              <p><span id="result-course-line"></span></p>
+              <p></p>
               <b>
                 <p><span id="result-other-book"></span></p>
               </b>
-              <p>SET ติด!</p>
+              <p><span id="result-buy-book"></span></p>
               <br>
 
 
@@ -1376,12 +1375,13 @@
             <div class="column-2 text-right">
               <p>.</p>
               <p>.</p>
+              <p><span id="result-off-price"></span></p>
               <p><span id="study-line-price"></span></p>
               <p><span id="study-line-price"></span></p>
               <p>.</p>
               <p><span id="result-course-price"></span></p>
               <p>.</p>
-              <p></p>
+              <p><span id="result-book-price"></span></p>
               <br>
 
             </div>
