@@ -13,7 +13,18 @@ body{
     background-repeat:no-repeat;
     background-size: cover;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+  }
+a:hover {
+    color: hsl(12, 100%, 50%);
+}
+.link_web{
+    font-weight: bold;
+    padding-left: 2vw;
+    font-size: 2vh;
+}
 img{
     max-width: 100%;
     height: auto;
@@ -81,8 +92,10 @@ img{
 }
 .logo-top-left{
     padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 1rem;
     position: absolute;
+    max-width: 1024px;
 }
 .padding-t-b{
     padding: 3vh 0vh;
@@ -490,6 +503,9 @@ img{
     .btn-enter-web-price{
         padding: 0.3rem 0.5rem;
         font-size: 0.7rem;
+    }
+    .link_web{
+        font-size: 1.4vh;
     }
 }
 

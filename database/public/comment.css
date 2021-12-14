@@ -118,7 +118,7 @@ td{
     width: 0.5vw;
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
 
     h2{
         font-size: 1.4rem;
