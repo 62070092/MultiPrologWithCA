@@ -1,1003 +1,1117 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="icon" href="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ptw mini logo.svg" type="image/svg">
-    <title>Pay to Win Education
-    </title>
 
-  </head>
-  <body>
-    <div class="logo-top-left">
-        <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ptw mini logo.svg" width="50vw" height="auto">
-    </div>
-    <div class="container">
-      
-      <div class="choice" id="country-or-abroad" data-show="0">
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo('country-or-abroad')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo('country-or-abroad')">
-        </a>
-        <!--  -->
-          <div class="flex-center">
-            <b><h1 class="text-center">เรียนในประเทศ<br>หรือต่างประเทศ ?</h1></b>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" href="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ptw mini logo.svg" type="image/svg">
+  <title>Pay to Win Education
+  </title>
 
-          <div class="info-1" data-swap="1">
-            <div class="flex-center">
-              <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนในประเทศ.png" style="height: 30vh;">
-            </div>
-            <br>
-            <div class="flex-center">
-              <div class="text-box">
-                <p class="country">ในประเทศ</p>
-              </div>
-            </div>
-            <br>
-            <div class="flex-center">
-              <img class="icon icon-red" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนในประเทศ icon.svg">
-              <img class="icon icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนต่างประเทศ icon.svg">
-            </div>
-            <br>
-            <div class="flex-center">
-                <p class="text-left">ยังอยากอยู่ในประเทศที่มีระบบการศึกษาอยู่ในอันดับ 8 จาก 10 <br>ประเทศอาเซียนใช่ไหมล่ะ? ไม่ต้องห่วงถึงจะเป็นแบบนั้นแต่โรงเรียน
-                    <br>มัธยมในไทยก็ไม่ได้เลวร้ายหรอกนะ</p>
-            </div>
-            <br>
-            <div class="flex-center"> 
-              <button type="button" class="btn-enter-web" onclick="goto('school-type') ; choose_choice(1)">เลือก</button>
-            </div>
-          </div>
+</head>
 
+<body>
+  <div class="logo-top-left">
+    <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ptw mini logo.svg" width="50vw" height="auto">
+    <a class="link_web" href="index.html">หน้าแรก</a>
+    <a class="link_web" href="choose_your_choice.html">เลือกการศึกษาของคุณ</a>
+    <a class="link_web" href="end-page.html">สรุปการศึกษาไทย</a>
+  </div>
+  <div class="container">
 
-          <div class="info-2" data-swap="0">
-            <div class="flex-center">
-              <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนต่างประเทศ.png" >
-            </div>
-            <br>
-            <div class="flex-center">
-              <div class="text-box">
-                <p class="out-country">ต่างประเทศ</p>
-              </div>
-            </div>
-            <br>
-            <div class="flex-center">
-              <img class="icon icon" data-icon="1" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนในประเทศ icon.svg">
-              <img class="icon icon-red" data-icon="0" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนต่างประเทศ icon.svg">
-            </div>
-            <br>
-            <div class="flex-center">
-                <p class="text-left">พร้อมโลดแล่นสู่เส้นทางความฝันอันสวยงามแล้วใช่ไหม ทางเรายืนยัน <br>ได้เลยว่าโรงเรียนมัธยมปลายของประเทศที่มีระบบการศึกษาติดอันดับ <br>ของโลกน่ะจะสามารถทำให้คุณไปถึงฝั่งฝันได้อย่างแน่นอน
-                </p>
-            </div>
-            <br>
-            <div class="flex-center">
-              <button type="button" class="btn-enter-web" onclick="goto('abroad') ; choose_choice(2)">เลือก</button>
-            </div>
-          </div>
+    <div class="choice" id="country-or-abroad" data-show="1">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo('country-or-abroad')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo('country-or-abroad')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">เรียนในประเทศ<br>หรือต่างประเทศ ?</h1>
+        </b>
       </div>
 
-      <div class="choice" id="school-type" data-show="0">
-          <!-- ปุ่ม -->
-          <a>
-            <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2('school-type')">
-          </a>
-          <a>
-            <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2('school-type')">
-          </a>
-          <!--  -->
+      <div class="info-1" data-swap="1">
         <div class="flex-center">
-          <b><h1 class="text-center">เรียนในโรงเรียนแบบไหนดี ?</h1></b>
-        </div>
-
-        <div class="info-1" data-swap="1">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนในโรงเรียนแบบไหนดี\อาชีววิกรม.png">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="school-T">อาชีววิกรม</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon icon-red" src="Pay to Win/icon/อาชีววิกรม icon.svg">
-            <img class="icon" src="Pay to Win/icon/รัฐบาลแกล้วกล้า icon.svg">
-            <img class="icon" src="Pay to Win/icon/โรงเรียนเอกชน icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-              <p class="text-left">อีกหนึ่งทางเลือกทางการศึกษาที่ทำให้เราได้เรียนตามความถนัดใน <br>
-                  ราคาย่อมเยา ทั้งยังจบไปแล้วพร้อมประกอบอาชีพได้เลย ถึงแม้ <br>
-                  จะไม่ได้ซีนเท่าเพื่อนๆ สายอื่นๆ ในสายตาคนไทย แต่ก็เป็นเส้นทาง <br>
-                  ที่ไม่เลวเลยล่ะ!
-              </p>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('occupational') ; choose_choice(3)">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-2" data-swap="0">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนในโรงเรียนแบบไหนดี\รัฐบาลแกล้วกล้า.png" >
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="school-T">รัฐบาลแกล้วกล้า</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/icon/อาชีววิกรม icon.svg">
-            <img class="icon icon-red" src="Pay to Win/icon/รัฐบาลแกล้วกล้า icon.svg">
-            <img class="icon" src="Pay to Win/icon/โรงเรียนเอกชน icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-              <p class="text-left">เตรียมตัววิ่งหนีครูปกครองให้ดี เพราะที่นี่จะทำให้เราได้เรียนรู้ที่จะใช้ชีวิต <br>
-                  ภายใต้กฎแปลกๆ ที่จะฝึกให้เรานั้นอยู่รอดได้ในสังคม กับความอบอุ่นเต็มพิกัด<br>
-                  ที่เกิดจากจำนวนนักเรียนที่เฉลี่ยแล้วแน่นเอี๊ยด ห้องละ 40 กว่าคน<br><br>
-                  ก็ยังดีที่ราคาค่าเทอมสบายกระเป๋า เพียงแต่ไม่สบายต่อชีวิตเราเท่าไหร่
-              </p>
-
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('line-of-study') ; choose_choice(4)">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-3" data-swap="0">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนในโรงเรียนแบบไหนดี\โรงเรียนเอกชน.png">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="school-T">โรงเรียนเอกชน</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/icon/อาชีววิกรม icon.svg">
-            <img class="icon" src="Pay to Win/icon/รัฐบาลแกล้วกล้า icon.svg">
-            <img class="icon icon-red" src="Pay to Win/icon/โรงเรียนเอกชน icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-              <p class="text-left">ชึ้นชื่อเรื่องสภาพสังคมที่ดี การดูแลที่ทั่วถึง พร้อมทั้งยังมีคุณภาพชีวิต<br>
-                  และหลักสูตรที่ดีกว่า ไม่ต้องกังวลเรื่องโปรเจคเตอร์ที่ติดๆ ดับๆ หรือ <br>
-                  สายไมค์ที่ช็อตจนอาจารย์พูดไม่ออกอีกต่อไป แต่ก็ต้องแลกมาด้วย <br>
-                  ค่าใช้จ่ายที่แพงขึ้นจนหูฉี่
-              </p>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('private-school') ; choose_choice(5)">เลือก</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="choice" id="occupational" data-show="0">   
-        <div class="flex-center">
-          <b><h1 class="text-center">อาชีววิกรม</h1></b>
-      </div>
-      <br>
-        <div class="info-1" data-swap="1">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/อาชีววิกรม/อาชีววิกรม.PNG" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-              <div class="text-center">
-                  <p class="text-left">
-                      ในปัจจุบันสังคมไทยกำลังขาดแคลนช่างฝีมือและบุคลากรวิชาชีพทักษะเฉพาะ<br>
-                      อยู่เป็นจำนวนมาก หลายคนแม้จะเรียนจบปริญญาตรงกับสายงาน แต่ยังขาด<br>
-                      ประสบการณ์ในการทำงานจริง การเรียนสายอาชีพจึงมีข้อได้เปรียบ!<br><br>
-                      ถึงแม้ว่าในอนาคตอาจจะเข้าเรียนต่อมหาลัยในคณะอย่างพวกแพทย์ไม่ได้<br>
-                      ก็เถอะ แต่อย่างน้อยมีทักษะวิชาชีพติดตัวเอาไว้มันก็ดีกว่าไม่ใช่เหรอ?<br><br>
-                  </p>
-                  <p class="text-price">18,000 บาทต่อ 3 ปี</p>
-              </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor')">ไปต่อ</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="choice" id="line-of-study" data-show="0" >
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2('line-of-study')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2('line-of-study')">
-        </a>
-        <!--  -->
-        <div class="flex-center">
-          <b><h1 class="text-center">เรียนสายไหนดี ?</h1></b>
-        </div>
-
-        <div class="info-1" data-swap="1">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/เรียนสายสามัญ.PNG">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="study-line">ศิลป์คำนวณ - ภาษา</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon icon-red" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายสามัญ icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/โครงการพิเศษวิทย์คณิต icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายอีพี icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">เรียนตามหลักสูตรทั่วไป ขึ้นอยู่กับสายที่คุณต้องการศึกษา อาจจะได้ <br>เจอเพื่อนๆ หลากหลายรูปแบบกับอาจารย์ที่อยากสอนบ้าง บางวัน
-                <br>ก็ไม่อยากสอนบ้าง แต่โดยรวมแล้วก็เป็นหนทางที่ดีนะ! แถมถูกด้วย</p>
-                <p class="text-price line-price">9,000 บาทต่อ 3 ปี</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(6)">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-2" data-swap="0">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/เรียนอีพี.PNG">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="study-line line-price">โครงการพิเศษ</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายสามัญ icon.svg">
-            <img class="icon icon-red" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/โครงการพิเศษวิทย์คณิต icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายอีพี icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div>
-              <p class="text-left">อยากเรียนเนื้อหาแบบเข้มข้นขึ้นเหรอ? ก็ต้องจ่ายเพิ่มเสียหน่อย <br>สำหรับโครงการพิเศษ คุณจะมีคาบเรียนเพิ่มขึ้นมา 2  - 3 คาบ
-                <br>อาจจะกลับบ้านช้ากว่าคนอื่นเขา แต่สภาพแวดล้อมภายในจะ<br>ทำให้คุณกระตือรือร้นในการเรียนมากขึ้นแน่นอน 
-            </p>
-            <p class="text-price">120,000 บาท ต่อ 3 ปี</p>
-            </div>
-              
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(7)">เลือก</button>
-          </div>
-        </div>
-
-
-      <div class="info-3" data-swap="0">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/เรียนห้องพิเศษวิทย์คณิต.PNG">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="study-line line-price">EP & IEP</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายสามัญ icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/โครงการพิเศษวิทย์คณิต icon.svg">
-            <img class="icon icon-red" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายอีพี icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">ภาษาเป็นสิ่งสำคัญ และคุณก็มองเห็นถึงความสำคัญของภาษา<br>ใช่ไหมล่ะ? เลือกเรียน EP สิ! ที่นี่ คุณจะได้เรียนเนื้อหาควบคู่แบบ
-                <br>2 ภาษา มีโอกาสได้เรียนกับคุณครูชาวต่างชาติ แถมยังมีโอกาสได้ทำ<br>กิจกรรมหลายๆ อย่างที่เพื่อนสายอื่นๆ ไม่มีโอกาสได้ทำด้วย 
-              </p>
-              <p class="text-price">240,000 บาทต่อ 3 ปี</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(8)">เลือก</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="choice" id="private-school" data-show="0">
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2('private-school')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2('private-school')">
-        </a>
-        <!--  -->
-        <div class="flex-center">
-          <b><h1 class="text-center">เรียนเอกชนแบบไหนดี ?</h1></b>
-        </div>
-      <br>
-        <div class="info-1" data-swap="1">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา.png" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="school-line">เอกชนปัญญา</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon icon-red" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">โรงเรียนเอกชนขนาดเล็ก เหมาะสำหรับนักเรียนที่ต้องการสังคมดีๆ <br>
-                และสภาพแวดล้อมที่ส่งเสริมในการเรียน ถึงแม้ว่าหลักสูตรจะไม่ได้ <br>
-              เข้มข้นเหมือนโรงเรียนวิทยเอกชนแต่รับรองได้เลยว่าคุณนั้นจะมี
-              <br>คุณภาพชีวิตที่ดีอย่างแน่นอน! </p>
-              <p class="text-price line-price">350,000 บาทต่อ 3 ปี</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(9)">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-2" data-swap="0">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน.png" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="school-line">วิทยเอกชน</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา icon.svg">
-            <img class="icon icon-red" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">หลักสูตรเข้มข้นมาอีกนิดกับโรงเรียนวิทยเอกชน โรงเรียนที่ <br>
-                ผลิตนักวิจัยและนักวิทยาศาสตร์ออกมาอย่างมากมาย ทั้งยัง <br>
-                การันตีถึงผลงานในทุกๆ ด้าน เรียกได้ว่าหากได้มาเรียนที่นี่ <br>
-                คุณจะกลายเป็น หนึ่งในหัวกะทิของประเทศชาติได้อย่างแน่นอน!</p>
-                <p class="text-price line-price">540,000 บาทต่อ 3 ปี</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(10)">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-3" data-swap="0">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ.png" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="school-line">เอกชนนานาชาติ</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา icon.svg">
-            <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน icon.svg">
-            <img class="icon icon-red" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">เป็นแค่หนึ่งในหัวกะทิของประเทศไทยก็ยังไม่พอ? <br>
-                เอกชนนานาชาตินั้นเป็นคำตอบของคุณ! ด้วยหลักสูตรการเรียน <br>
-                การสอนเข้มข้นที่ถูกสอนควบคู่สองภาษาโดยผู้เชี่ยวชาญ การไป <br>
-                ทำงานที่ต่างประเทศถือว่าไม่ใช่ความฝันที่ไกลเกินเอื้อมเลย</p>
-                <p class="text-price line-price">2,220,000 บาทต่อ 3 ปี</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(11)">เลือก</button>
-          </div>
-        </div>
-
-      </div>
-      
-      <div class="choice" id="abroad" data-show="0">
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo('abroad')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo('abroad')">
-        </a>
-        <!--  -->
-        <div class="flex-center">
-          <b><h1 class="text-center">ศึกษาต่อต่างประเทศ</h1></b>
-      </div>
-      <br>
-        <div class="info-1" data-swap="1">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/ศึกษาต่อต่างประเทศ/Im ready.PNG" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p>I’m Ready !</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon icon-red" src="Pay to Win/icon/im ready icon.svg">
-            <img class="icon" src="Pay to Win/icon/ยังไม่เข้าใจภาษาอังกฤษเลย icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-              <p class="text-left">Spending time abroad not only fulfills academic goals, 
-                  <br>but also lets you experience a new culture, language, and <br>environment. Nailing down all the details can seem <br>overwhelming, but lucky for you, We’re here to help!</p>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('go-abroad')">Choose</button>
-          </div>
-        </div>
-
-        <div class="info-2" data-swap="0">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/ศึกษาต่อต่างประเทศ/ยังไม่ค่อยเข้าใจภาษาอังกฤษเลย.PNG" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p>ยังไม่ได้ภาษาเลย</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/icon/im ready icon.svg">
-            <img class="icon icon-red" src="Pay to Win/icon/ยังไม่เข้าใจภาษาอังกฤษเลย icon.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-              <p class="text-left">อยากไปอยู่ในประเทศที่ใช้ภาษาอังกฤษเป็นหลักแต่ยังไม่เข้าใจภาษา<br>
-                  อังกฤษเลยอย่างนั้นเหรอ? ไม่เป็นไร ทุกปัญหามีทางออกเสมอ<br>
-                  
-                  ขอแนะนำคอร์สเรียนภาษาอังกฤษ ที่จะสยบทุกปัญหาของคุณ!
-              </p>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('course_offering')">เลือก</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="choice" id="go-abroad" data-show="0">
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2('go-abroad')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2('go-abroad')">
-        </a>
-        <!--  -->
-        <div class="flex-center">
-          <b><h1 class="text-center">I’m Ready!</h1></b>
-      </div>
-      <br>
-        <div class="info-1" data-swap="1">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/im ready/america.PNG" >
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p>America</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon icon-red" src="Pay to Win/icon/america icon.svg">
-            <img class="icon" src="Pay to Win/icon/canada icon.svg">
-            <img class="icon" src="Pay to Win/icon/singapore icon.svg">
-        </div>
-          <br>
-          <div class="flex-center">
-              <div class="text-left">
-                <p class="text-left">The United States is called a melting pot for a very good reason. With its <br>50 states, each like their own country because of their unique climates, <br>food, and cultural activities, America has something for everybody. </p>
-                <p class="text-price">7,863,923 Baht /  3 Years</p>
-              </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-2" data-swap="0">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/im ready/canada.PNG" >
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p>Canada</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/icon/america icon.svg">
-            <img class="icon icon-red" src="Pay to Win/icon/canada icon.svg">
-            <img class="icon" src="Pay to Win/icon/singapore icon.svg">
-        </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">One of the greatest place for students to go to learn and explore. <br>You’ll find that Canada is one country that has plenty of places for <br>you to see. Imagine how living there while you pursue an education <br>may benefit you</p>
-              <p class="text-price">5,818,100 Baht /  3 Years</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-3" data-swap="0">
-          <div class="flex-center">
-            <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/im ready/singapore.PNG" >
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p>Singapore</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/icon/america icon.svg">
-            <img class="icon" src="Pay to Win/icon/canada icon.svg">
-            <img class="icon icon-red" src="Pay to Win/icon/singapore icon.svg">
-        </div>
-          <div class="flex-center">
-              <div class="text-left">
-                <p class="text-left">Singapore is a cutting-edge cosmopolitan center with a world-class <br>educational system. Be ready to meet people of many different ethnicities, <br>religions, cuisines, and ways of living who exist in harmony.</p>
-                <p class="text-price">2,400,000 Baht /  3 Years</p>
-              </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="choice" id="course_offering" data-show="0">
-        <div class="flex-center">
-          <img class="logo-1" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนต่างประเทศ\course offering.PNG">
-          
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนในประเทศ.png"
+            style="height: 30vh;">
         </div>
         <br>
         <div class="flex-center">
-          <h1 class="text-center">
-              Course offering!
-          </h1>
-          <br>
-        </div>
-        <div class="flex-center">
-          <div class="grid-parent">
-              <div class="column-1 text-left">
-                  <p>Grammar Course</p>
-                  <p>Fund. of Academic Writing</p>
-                  <p>IELTS Preparation</p>
-                  <p>Intensive IELTS Writing  </p>
-                  <p>Speaking & Pronunciation </p>
-                  <p>English for Academic Purpose</p>
-              </div>
-              <div class="column-2 text-right">
-                  <p>7,800 Baht</p>
-                  <p>14,000 Baht</p>
-                  <p>19,000 Baht</p>
-                  <p>12,500 Baht</p>
-                  <p>8,000 Baht</p>
-                  <p>14,000 Baht</p>
-              </div>
-              <p class="text-price">รวมประมาณ	75,300	 Baht</p>
-          </div>
-        </div>
-        
-        <div class="flex-center padding-t-b">
-          <div>
-              <button type="button" class="btn-enter-web" onclick="goto('go-abroad')">Accept</button>
-          </div>
-          <div class="padding-left">
-            <button type="button" class="btn-enter-web" onclick="goto('are-you-sure')">Decline</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="choice" id="are-you-sure" data-show="0">
-        <div class="flex-center">
-          <img class="logo-1" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนต่างประเทศ\are you sure.PNG">
-          
-        </div>
-        <br>
-        <div class="flex-center">
-          <h1 class="text-center">
-              Are you sure?
-          </h1>
-  
-        </div>
-        <div class="flex-center">
-          <p>การที่จะไปเรียนต่างประเทศ คุณจำเป็นต้องมีความรู้ทางด้านภาษาอังกฤษ<br>
-              พอสมควรเพื่อสอบวัดระดับความรู้ก่อนเข้าเรียน ซึ่งถ้าหากคุณไม่ยอม<br>
-              เรียนคอร์สเหล่านี้ คุณจะสอบวัดระดับไม่ผ่านและจะไม่สามารถไปเรียน<br>
-              ที่ต่างประเทศตามที่หวังได้นะ แน่ใจแล้วเหรอ?</p>
-        </div>
-        <br>
-        <div class="flex-center">
-          <div>
-              <button type="button" class="btn-enter-web-price" onclick="goto('school-type')">เรียนในไทยก็ได้</button>
+          <div class="text-box">
+            <p class="country">ในประเทศ</p>
           </div>
         </div>
         <br>
-        <div class="padding-left" style="margin-left: 8.5vw ; cursor: pointer; color: blue;">
-          <p onclick="goto('course_offering')"> << ขอกลับไปเลือกใหม่</p>
-        </div>
-      </div>
-
-      <div class="choice" id="tutor" data-show="0">
         <div class="flex-center">
-          <img class="logo-1" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนพิเศษหน่อยไหม.PNG">
-          
+          <img class="icon icon-red"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนในประเทศ icon.svg">
+          <img class="icon icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนต่างประเทศ icon.svg">
         </div>
         <br>
         <div class="flex-center">
-          <h1 class="text-center text-header">
-              เรียนพิเศษหน่อยไหม?
-          </h1>
-          <br>
-        </div>
-        <div class="flex-center">
-          <p class="text-left">
-              ถ้าจะเรียนต่อระดับมหาวิทยาลัยในอนาคตกับระบบการศึกษาเท่านี้<br>
-              ยังทำให้แกร่งไม่พอจะไปสู้เขาแน่<br><br>
-              ทางเราจึงขอเสนอวิธีแก้ปัญหาด้วยการเรียนพิเศษที่มีให้เลือก<br>
-              สรรหลากหลายแบบตามใจประสงค์!
+          <p class="text-left">ยังอยากอยู่ในประเทศที่มีระบบการศึกษาอยู่ในอันดับ 8 จาก 10 <br>ประเทศอาเซียนใช่ไหมล่ะ?
+            ไม่ต้องห่วงถึงจะเป็นแบบนั้นแต่โรงเรียน
+            <br>มัธยมในไทยก็ไม่ได้เลวร้ายหรอกนะ
           </p>
         </div>
-        <div class="flex-center padding-t-b">
-          <button type="button" class="btn-enter-web" onclick="goto('extra-class')">ต่อไป</button>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('school-type') ; choose_choice(1)">เลือก</button>
         </div>
       </div>
-      
-      <div class="choice" id="extra-class" data-show="0">
-         <!-- ปุ่ม -->
-         <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2('extra-class')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2('extra-class')">
-        </a>
-        <!--  -->
+
+
+      <div class="info-2" data-swap="0">
         <div class="flex-center">
-            <b>
-                <h1 class="text-center">เรียนพิเศษกันหน่อยไหม ?</h1>
-            </b>
+          <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนต่างประเทศ.png">
         </div>
         <br>
-        <div class="info-1" data-swap="1">
-            <div class="flex-center">
-                <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับติวเตอร์.PNG" style="height: 30vh;">
-            </div>
-            <br>
-            <div class="flex-center">
-                <div class="text-box">
-                    <p class="take-class">เรียนกับติวเตอร์</p>
-                </div>
-            </div>
-            <br>
-            <div class="flex-center">
-                <img class="icon icon-red" src="Pay to Win/icon/เรียนกับติวเตอร์ icon.svg">
-                <img class="icon" src="Pay to Win/icon/เรียนกับวิดีโอ icon.svg">
-                <img class="icon" src="Pay to Win/icon/ไม่เรียนพิเศษ icon.svg">
-            </div>
-            <br>
-            <div class="flex-center">
-                <div class="text-left">
-                    <p class="text-left">เรียนพิเศษตัวต่อตัวกับรุ่นพี่ อาจารย์ หรือติวเตอร์ที่คุณชื่นชอบ
-                        <br>มีข้อได้เปรียบตรงสงสัยอะไรตรงไหนก็ถามได้ในทันที ขอให้เน้น
-                        <br>ตรงไหน ก็เน้นได้ตามสั่ง แต่ไม่รู้จะสู้กับการเรียนกับที่ติวดังๆ <br> ได้ไหมน่ะสิ . . .
-                    </p>
-                    <p class="text-price class-price">57,600 บาทต่อ 3 ปี</p>
-                </div>
-            </div>
-            <br>
-            <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(12)">เลือก</button>
-            </div>
-        </div>
-
-        <div class="info-2" data-swap="0">
-            <div class="flex-center">
-                <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับวิดีโอ.PNG" style="height: 30vh;">
-            </div>
-            <br>
-            <div class="flex-center">
-                <div class="text-box">
-                    <p class="take-class">เรียนกับวิดีโอ</p>
-                </div>
-            </div>
-            <br>
-            <div class="flex-center">
-                <img class="icon" src="Pay to Win/icon/เรียนกับติวเตอร์ icon.svg">
-                <img class="icon icon-red" src="Pay to Win/icon/เรียนกับวิดีโอ icon.svg">
-                <img class="icon" src="Pay to Win/icon/ไม่เรียนพิเศษ icon.svg">
-            </div>
-            <br>
-            <div class="flex-center">
-                <p class="text-left">ยิ่งเริ่มก่อน ยิ่งพร้อมก่อน, อะไรจะสะดวกสบาย ไปกว่าการเรียน
-                    <br>กับวิดีโอที่สามารถกรอไปกรอมาได้อีกล่ะ? ถึงแม้ว่าจะตอบโต้กับ <br>คนไม่ได้ก็เถอะ
-                    แต่เรามาเรียนนี่ ไม่ได้มาคุยซะหน่อย! <br> <br> ยอดฮิตจนห้ามพลาดเลยล่ะตัวเลือกนี้
-                </p>
-            </div>
-            <br>
-            <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('course') ; choose_choice(13)">ไปเลือกคอร์สติว</button>
-            </div>
-        </div>
-
-        <div class="info-3" data-swap="0">
-            <div class="flex-center">
-                <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/ไม่เรียนพิเศษ.PNG" style="height: 30vh;">
-            </div>
-            <br>
-            <div class="flex-center">
-                <div class="text-box">
-                    <p class="take-class">ไม่เรียนพิเศษ</p>
-                </div>
-            </div>
-            <br>
-            <div class="flex-center">
-                <img class="icon" src="Pay to Win/icon/เรียนกับติวเตอร์ icon.svg">
-                <img class="icon" src="Pay to Win/icon/เรียนกับวิดีโอ icon.svg">
-                <img class="icon icon-red" src="Pay to Win/icon/ไม่เรียนพิเศษ icon.svg">
-            </div>
-            <br>
-            <div class="flex-center">
-                <p class="text-left">อันนี้คือมั่นใจในตัวเองหรือเงินไม่พอละเนี่ย?<br>
-                    <br>อย่าลืมสิว่าเพื่อนคนอื่นๆ ยอมจ่ายเพื่อที่จะเพิ่มโอกาสนะ จะยอมให้
-                    <br>โอกาสตัวเองน้อยกว่าคนอื่นจริงๆ เหรอ?
-                </p>
-            </div>
-            <br>
-            <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(14)">เลือก</button>
-            </div>   
-        </div>
-      </div>
-
-      <div class="choice" id="course" data-show="0">
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2('course')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2('course')">
-        </a>
-        <!--  -->
         <div class="flex-center">
-          <b><h1 class="text-center">คอร์สเรียนแนะนำ!</h1></b>
-      </div>
-      <br>
-        <div class="info-1" data-swap="1">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/คอร์สเรียนแนะนำ/คอร์สต้นอ่อน.PNG" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="course-line">คอร์สต้นอ่อน</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon icon-red" src="Pay to Win/icon/คอร์สต้นอ่อน icon.svg">
-            <img class="icon icon_2" src="Pay to Win/icon/คอร์สสมใจหวัง icon.svg">
-            <img class="icon icon_3" src="Pay to Win/icon/คอร์สสร้างแชมป์.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">‘คอร์สปูพื้นฐานจำเป็นสำหรับสอบเข้ามหาลัย ไม่เข้มข้นเท่าไหร่ 
-                <br>แต่สบายกระเป๋า!’</p>
-                <p class="text-price course-price">20,000 บาท</p>
-                <p class="text-small">*โอกาสสอบติดขึ้นอยู่กับความเก่งติดตัว</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(15)">เลือก</button>
+          <div class="text-box">
+            <p class="out-country">ต่างประเทศ</p>
           </div>
         </div>
-
-        <div class="info-2" data-swap="0">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/คอร์สเรียนแนะนำ/คอร์สสมใจหวัง.PNG" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="course-line">คอร์สสมใจหวัง</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/icon/คอร์สต้นอ่อน icon.svg">
-            <img class="icon icon-red" src="Pay to Win/icon/คอร์สสมใจหวัง icon.svg">
-            <img class="icon" src="Pay to Win/icon/คอร์สสร้างแชมป์.svg">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">'คอร์สเรียน ติวเนื้อหาสอบเข้ามหาลัยอย่างเข้มข้นเหมาะสำหรับ <br>เด็ก ม.6 ที่กำลังพยายามยัดความรู้เข้าสมองก่อนเข้าสู่สนามสอบ <br>ในเวลาที่จำกัด เพื่อมหาลัยในฝันที่ไม่ไกลเกินเอื้อม!'</p>
-              <p class="text-price course-price">78,100 บาท</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(16)">เลือก</button>
-          </div>
-        </div>
-
-        <div class="info-3" data-swap="0">
-          <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/คอร์สเรียนแนะนำ/คอร์สสร้างแชมป์.PNG" style="height: 30vh;">
-          </div>
-          <br>
-          <div class="flex-center">
-            <div class="text-box">
-              <p class="course-line">คอร์สสร้างแชมป์</p>
-            </div>
-          </div>
-          <br>
-          <div class="flex-center">
-            <img class="icon" src="Pay to Win/icon/คอร์สต้นอ่อน icon.svg">
-            <img class="icon" src="Pay to Win/icon/คอร์สสมใจหวัง icon.svg">
-            <img class="icon icon-red" src="Pay to Win/icon/คอร์สสร้างแชมป์.svg">
-          </div>
-          <div class="flex-center">
-            <div class="text-left">
-              <p class="text-left">‘คอร์สเพิ่มผลการเรียน ติวเข้มเนื้อหาตั้งแต่ ม. 4 - เตรียมเข้ามหาลัย <br>สำหรับน้องๆ ที่อยากได้ทั้งเกรดทั้งมหาลัยในฝัน’</p>
-              <p class="text-price course-price">164,100 บาท</p>
-              <p class="text-small">*เหมาะสำหรับคนพร้อมเรียนพิเศษ 6 ช.ม. ต่อวัน
-                <br>** อาจเรียนไม่ทันถ้าไม่เริ่มตั้งแต่ตอน ม.4 
-                <br>***เรียนไม่ไหว เราไม่คืนเงิน</p>
-            </div> 
-          </div>
-          <br>
-          <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(17)">เลือก</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="choice" id="otherbook" data-show="0">
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo('otherbook')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo('otherbook')">
-        </a>
-        <!--  -->
+        <br>
         <div class="flex-center">
-            <b>
-                <h1 class="text-center">หนังสือจิปาถะอื่นๆหนังสือจิปาถะอื่นๆ</h1>
-            </b>
+          <img class="icon icon" data-icon="1"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนในประเทศ icon.svg">
+          <img class="icon icon-red" data-icon="0"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/เรียนในประเทศหรือต่างประเทศ/เรียนต่างประเทศ icon.svg">
         </div>
-        <div class="info-1" data-swap="1">
-            <div class="flex-center">
-                <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ซื้อเพิ่ม.PNG" style="height: 30vh;">
-            </div>
-            <br>
-            <div class="flex-center">
-                <div class="text-box">
-                    <p class="other-book">ซื้อเพิ่ม</p>
-                </div>
-            </div>
-            <br>
-            <div class="flex-center">
-                <img class="icon icon-red" data-icon="1" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ซื้อหนังสือ icon.svg">
-                <img class="icon" data-icon="0" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ไม่ซื้อหนังสือ icon.svg">
-            </div>
-            <br>
-            <div class="flex-center">
-                <p class="text-left">แน่นอนสิ เรียนอย่างเดียวจะไปพออะไร ถ้ามีหนังสือไว้อ่านตอนก่อน
-                    <br>เข้านอน ก่อนอาบน้ำ ก่อนกินข้าวเช้า ต้องทำให้ชีวิตง่ายขึ้นมากแน่ๆ
-                </p>
-            </div>
-            <br>
-            <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('book') ; choose_choice(18)">เลือก</button>
-            </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">พร้อมโลดแล่นสู่เส้นทางความฝันอันสวยงามแล้วใช่ไหม ทางเรายืนยัน
+            <br>ได้เลยว่าโรงเรียนมัธยมปลายของประเทศที่มีระบบการศึกษาติดอันดับ
+            <br>ของโลกน่ะจะสามารถทำให้คุณไปถึงฝั่งฝันได้อย่างแน่นอน
+          </p>
         </div>
-
-        <div class="info-2" data-swap="0">
-            <div class="flex-center">
-                <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ไม่ซื้อเพิ่ม.PNG" style="height: 30vh;">
-            </div>
-            <br>
-            <div class="flex-center">
-                <div class="text-box">
-                    <p class="other-book">ไม่ซื้อเพิ่ม</p>
-                </div>
-            </div>
-            <br>
-            <div class="flex-center">
-                <img class="icon" data-icon="1" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ซื้อหนังสือ icon.svg">
-                <img class="icon icon-red" data-icon="0" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ไม่ซื้อหนังสือ icon.svg">
-            </div>
-            <br>
-            <div class="flex-center">
-                <p class="text-left">ถามจริง ?
-                </p>
-            </div>
-            <br>
-            <div class="flex-center">
-                <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(19)">เลือก</button>
-            </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('abroad') ; choose_choice(2)">เลือก</button>
         </div>
       </div>
+    </div>
 
-      <div class="choice" id="book" data-show="0">
-        <!-- ปุ่ม -->
-        <a>
-          <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png" style="width: 30px; height: auto;" onclick="swapInfo_2('book')">
-        </a>
-        <a>
-          <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png" style="width: 30px; height: auto;" onclick="swapInfo_2('book')">
-        </a>
-        <!--  -->
+    <div class="choice" id="school-type" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('school-type')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('school-type')">
+      </a>
+      <!--  -->
       <div class="flex-center">
-        <b><h1 class="text-center">ชุดหนังสือแนะนำ</h1></b>
+        <b>
+          <h1 class="text-center">เรียนในโรงเรียนแบบไหนดี ?</h1>
+        </b>
+      </div>
+
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img class="main-image"
+            src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนในโรงเรียนแบบไหนดี\อาชีววิกรม.png">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="school-T">อาชีววิกรม</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red" src="Pay to Win/icon/อาชีววิกรม icon.svg">
+          <img class="icon" src="Pay to Win/icon/รัฐบาลแกล้วกล้า icon.svg">
+          <img class="icon" src="Pay to Win/icon/โรงเรียนเอกชน icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">อีกหนึ่งทางเลือกทางการศึกษาที่ทำให้เราได้เรียนตามความถนัดใน <br>
+            ราคาย่อมเยา ทั้งยังจบไปแล้วพร้อมประกอบอาชีพได้เลย ถึงแม้ <br>
+            จะไม่ได้ซีนเท่าเพื่อนๆ สายอื่นๆ ในสายตาคนไทย แต่ก็เป็นเส้นทาง <br>
+            ที่ไม่เลวเลยล่ะ!
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('occupational') ; choose_choice(3)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img class="main-image"
+            src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนในโรงเรียนแบบไหนดี\รัฐบาลแกล้วกล้า.png">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="school-T">รัฐบาลแกล้วกล้า</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/อาชีววิกรม icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/รัฐบาลแกล้วกล้า icon.svg">
+          <img class="icon" src="Pay to Win/icon/โรงเรียนเอกชน icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">เตรียมตัววิ่งหนีครูปกครองให้ดี เพราะที่นี่จะทำให้เราได้เรียนรู้ที่จะใช้ชีวิต <br>
+            ภายใต้กฎแปลกๆ ที่จะฝึกให้เรานั้นอยู่รอดได้ในสังคม กับความอบอุ่นเต็มพิกัด<br>
+            ที่เกิดจากจำนวนนักเรียนที่เฉลี่ยแล้วแน่นเอี๊ยด ห้องละ 40 กว่าคน<br><br>
+            ก็ยังดีที่ราคาค่าเทอมสบายกระเป๋า เพียงแต่ไม่สบายต่อชีวิตเราเท่าไหร่
+          </p>
+
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('line-of-study') ; choose_choice(4)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-3" data-swap="0">
+        <div class="flex-center">
+          <img class="main-image"
+            src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนในโรงเรียนแบบไหนดี\โรงเรียนเอกชน.png">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="school-T">โรงเรียนเอกชน</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/อาชีววิกรม icon.svg">
+          <img class="icon" src="Pay to Win/icon/รัฐบาลแกล้วกล้า icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/โรงเรียนเอกชน icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">ชึ้นชื่อเรื่องสภาพสังคมที่ดี การดูแลที่ทั่วถึง พร้อมทั้งยังมีคุณภาพชีวิต<br>
+            และหลักสูตรที่ดีกว่า ไม่ต้องกังวลเรื่องโปรเจคเตอร์ที่ติดๆ ดับๆ หรือ <br>
+            สายไมค์ที่ช็อตจนอาจารย์พูดไม่ออกอีกต่อไป แต่ก็ต้องแลกมาด้วย <br>
+            ค่าใช้จ่ายที่แพงขึ้นจนหูฉี่
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('private-school') ; choose_choice(5)">เลือก</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="occupational" data-show="0">
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">อาชีววิกรม</h1>
+        </b>
       </div>
       <br>
       <div class="info-1" data-swap="1">
         <div class="flex-center">
-          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/ชุดหนังสือแนะนำ/เซ็ตติด_.PNG" style="height: 30vh;">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/อาชีววิกรม/อาชีววิกรม.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-center">
+            <p class="text-left">
+              ในปัจจุบันสังคมไทยกำลังขาดแคลนช่างฝีมือและบุคลากรวิชาชีพทักษะเฉพาะ<br>
+              อยู่เป็นจำนวนมาก หลายคนแม้จะเรียนจบปริญญาตรงกับสายงาน แต่ยังขาด<br>
+              ประสบการณ์ในการทำงานจริง การเรียนสายอาชีพจึงมีข้อได้เปรียบ!<br><br>
+              ถึงแม้ว่าในอนาคตอาจจะเข้าเรียนต่อมหาลัยในคณะอย่างพวกแพทย์ไม่ได้<br>
+              ก็เถอะ แต่อย่างน้อยมีทักษะวิชาชีพติดตัวเอาไว้มันก็ดีกว่าไม่ใช่เหรอ?<br><br>
+            </p>
+            <p class="text-price">18,000 บาทต่อ 3 ปี</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('tutor')">ไปต่อ</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="line-of-study" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('line-of-study')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('line-of-study')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">เรียนสายไหนดี ?</h1>
+        </b>
+      </div>
+
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img class="main-image"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/เรียนสายสามัญ.PNG">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="study-line">ศิลป์คำนวณ - ภาษา</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายสามัญ icon.svg">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/โครงการพิเศษวิทย์คณิต icon.svg">
+          <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายอีพี icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">เรียนตามหลักสูตรทั่วไป ขึ้นอยู่กับสายที่คุณต้องการศึกษา อาจจะได้ <br>เจอเพื่อนๆ
+              หลากหลายรูปแบบกับอาจารย์ที่อยากสอนบ้าง บางวัน
+              <br>ก็ไม่อยากสอนบ้าง แต่โดยรวมแล้วก็เป็นหนทางที่ดีนะ! แถมถูกด้วย
+            </p>
+            <p class="text-price line-price">9,000 บาทต่อ 3 ปี</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(6)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img class="main-image"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/เรียนอีพี.PNG">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="study-line line-price">โครงการพิเศษ</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายสามัญ icon.svg">
+          <img class="icon icon-red"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/โครงการพิเศษวิทย์คณิต icon.svg">
+          <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายอีพี icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div>
+            <p class="text-left">อยากเรียนเนื้อหาแบบเข้มข้นขึ้นเหรอ? ก็ต้องจ่ายเพิ่มเสียหน่อย <br>สำหรับโครงการพิเศษ
+              คุณจะมีคาบเรียนเพิ่มขึ้นมา 2 - 3 คาบ
+              <br>อาจจะกลับบ้านช้ากว่าคนอื่นเขา แต่สภาพแวดล้อมภายในจะ<br>ทำให้คุณกระตือรือร้นในการเรียนมากขึ้นแน่นอน
+            </p>
+            <p class="text-price">120,000 บาท ต่อ 3 ปี</p>
+          </div>
+
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(7)">เลือก</button>
+        </div>
+      </div>
+
+
+      <div class="info-3" data-swap="0">
+        <div class="flex-center">
+          <img class="main-image"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/เรียนห้องพิเศษวิทย์คณิต.PNG">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="study-line line-price">EP & IEP</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายสามัญ icon.svg">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/โครงการพิเศษวิทย์คณิต icon.svg">
+          <img class="icon icon-red"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนสายอะไรดี/สายอีพี icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">ภาษาเป็นสิ่งสำคัญ และคุณก็มองเห็นถึงความสำคัญของภาษา<br>ใช่ไหมล่ะ? เลือกเรียน EP สิ!
+              ที่นี่ คุณจะได้เรียนเนื้อหาควบคู่แบบ
+              <br>2 ภาษา มีโอกาสได้เรียนกับคุณครูชาวต่างชาติ แถมยังมีโอกาสได้ทำ<br>กิจกรรมหลายๆ อย่างที่เพื่อนสายอื่นๆ
+              ไม่มีโอกาสได้ทำด้วย
+            </p>
+            <p class="text-price">240,000 บาทต่อ 3 ปี</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(8)">เลือก</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="private-school" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('private-school')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('private-school')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">เรียนเอกชนแบบไหนดี ?</h1>
+        </b>
+      </div>
+      <br>
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา.png"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="school-line">เอกชนปัญญา</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา icon.svg">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน icon.svg">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">โรงเรียนเอกชนขนาดเล็ก เหมาะสำหรับนักเรียนที่ต้องการสังคมดีๆ <br>
+              และสภาพแวดล้อมที่ส่งเสริมในการเรียน ถึงแม้ว่าหลักสูตรจะไม่ได้ <br>
+              เข้มข้นเหมือนโรงเรียนวิทยเอกชนแต่รับรองได้เลยว่าคุณนั้นจะมี
+              <br>คุณภาพชีวิตที่ดีอย่างแน่นอน!
+            </p>
+            <p class="text-price line-price">350,000 บาทต่อ 3 ปี</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(9)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน.png"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="school-line">วิทยเอกชน</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา icon.svg">
+          <img class="icon icon-red"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน icon.svg">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">หลักสูตรเข้มข้นมาอีกนิดกับโรงเรียนวิทยเอกชน โรงเรียนที่ <br>
+              ผลิตนักวิจัยและนักวิทยาศาสตร์ออกมาอย่างมากมาย ทั้งยัง <br>
+              การันตีถึงผลงานในทุกๆ ด้าน เรียกได้ว่าหากได้มาเรียนที่นี่ <br>
+              คุณจะกลายเป็น หนึ่งในหัวกะทิของประเทศชาติได้อย่างแน่นอน!</p>
+            <p class="text-price line-price">540,000 บาทต่อ 3 ปี</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(10)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-3" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ.png"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="school-line">เอกชนนานาชาติ</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนปัญญา icon.svg">
+          <img class="icon"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/วิทยเอกชน icon.svg">
+          <img class="icon icon-red"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนเอกชนแบบไหนดี/เอกชนนานาชาติ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">เป็นแค่หนึ่งในหัวกะทิของประเทศไทยก็ยังไม่พอ? <br>
+              เอกชนนานาชาตินั้นเป็นคำตอบของคุณ! ด้วยหลักสูตรการเรียน <br>
+              การสอนเข้มข้นที่ถูกสอนควบคู่สองภาษาโดยผู้เชี่ยวชาญ การไป <br>
+              ทำงานที่ต่างประเทศถือว่าไม่ใช่ความฝันที่ไกลเกินเอื้อมเลย</p>
+            <p class="text-price line-price">2,220,000 บาทต่อ 3 ปี</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('tutor') ; choose_choice(11)">เลือก</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="choice" id="abroad" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo('abroad')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo('abroad')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">ศึกษาต่อต่างประเทศ</h1>
+        </b>
+      </div>
+      <br>
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/ศึกษาต่อต่างประเทศ/Im ready.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p>I’m Ready !</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red" src="Pay to Win/icon/im ready icon.svg">
+          <img class="icon" src="Pay to Win/icon/ยังไม่เข้าใจภาษาอังกฤษเลย icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">Spending time abroad not only fulfills academic goals,
+            <br>but also lets you experience a new culture, language, and <br>environment. Nailing down all the details
+            can seem <br>overwhelming, but lucky for you, We’re here to help!
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('go-abroad')">Choose</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/ศึกษาต่อต่างประเทศ/ยังไม่ค่อยเข้าใจภาษาอังกฤษเลย.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p>ยังไม่ได้ภาษาเลย</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/im ready icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/ยังไม่เข้าใจภาษาอังกฤษเลย icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">อยากไปอยู่ในประเทศที่ใช้ภาษาอังกฤษเป็นหลักแต่ยังไม่เข้าใจภาษา<br>
+            อังกฤษเลยอย่างนั้นเหรอ? ไม่เป็นไร ทุกปัญหามีทางออกเสมอ<br>
+
+            ขอแนะนำคอร์สเรียนภาษาอังกฤษ ที่จะสยบทุกปัญหาของคุณ!
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('course_offering')">เลือก</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="go-abroad" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('go-abroad')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('go-abroad')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">I’m Ready!</h1>
+        </b>
+      </div>
+      <br>
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/im ready/america.PNG">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p>America</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red" src="Pay to Win/icon/america icon.svg">
+          <img class="icon" src="Pay to Win/icon/canada icon.svg">
+          <img class="icon" src="Pay to Win/icon/singapore icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">The United States is called a melting pot for a very good reason. With its <br>50
+              states, each like their own country because of their unique climates, <br>food, and cultural activities,
+              America has something for everybody. </p>
+            <p class="text-price">7,863,923 Baht / 3 Years</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/im ready/canada.PNG">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p>Canada</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/america icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/canada icon.svg">
+          <img class="icon" src="Pay to Win/icon/singapore icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">One of the greatest place for students to go to learn and explore. <br>You’ll find that
+              Canada is one country that has plenty of places for <br>you to see. Imagine how living there while you
+              pursue an education <br>may benefit you</p>
+            <p class="text-price">5,818,100 Baht / 3 Years</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-3" data-swap="0">
+        <div class="flex-center">
+          <img class="main-image" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนต่างประเทศ/im ready/singapore.PNG">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p>Singapore</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/america icon.svg">
+          <img class="icon" src="Pay to Win/icon/canada icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/singapore icon.svg">
+        </div>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">Singapore is a cutting-edge cosmopolitan center with a world-class <br>educational
+              system. Be ready to meet people of many different ethnicities, <br>religions, cuisines, and ways of living
+              who exist in harmony.</p>
+            <p class="text-price">2,400,000 Baht / 3 Years</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="course_offering" data-show="0">
+      <div class="flex-center">
+        <img class="logo-1" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนต่างประเทศ\course offering.PNG">
+
+      </div>
+      <br>
+      <div class="flex-center">
+        <h1 class="text-center">
+          Course offering!
+        </h1>
+        <br>
+      </div>
+      <div class="flex-center">
+        <div class="grid-parent">
+          <div class="column-1 text-left">
+            <p>Grammar Course</p>
+            <p>Fund. of Academic Writing</p>
+            <p>IELTS Preparation</p>
+            <p>Intensive IELTS Writing </p>
+            <p>Speaking & Pronunciation </p>
+            <p>English for Academic Purpose</p>
+          </div>
+          <div class="column-2 text-right">
+            <p>7,800 Baht</p>
+            <p>14,000 Baht</p>
+            <p>19,000 Baht</p>
+            <p>12,500 Baht</p>
+            <p>8,000 Baht</p>
+            <p>14,000 Baht</p>
+          </div>
+          <p class="text-price">รวมประมาณ 75,300 Baht</p>
+        </div>
+      </div>
+
+      <div class="flex-center padding-t-b">
+        <div>
+          <button type="button" class="btn-enter-web" onclick="goto('go-abroad')">Accept</button>
+        </div>
+        <div class="padding-left">
+          <button type="button" class="btn-enter-web" onclick="goto('are-you-sure')">Decline</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="are-you-sure" data-show="0">
+      <div class="flex-center">
+        <img class="logo-1" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนต่างประเทศ\are you sure.PNG">
+
+      </div>
+      <br>
+      <div class="flex-center">
+        <h1 class="text-center">
+          Are you sure?
+        </h1>
+
+      </div>
+      <div class="flex-center">
+        <p>การที่จะไปเรียนต่างประเทศ คุณจำเป็นต้องมีความรู้ทางด้านภาษาอังกฤษ<br>
+          พอสมควรเพื่อสอบวัดระดับความรู้ก่อนเข้าเรียน ซึ่งถ้าหากคุณไม่ยอม<br>
+          เรียนคอร์สเหล่านี้ คุณจะสอบวัดระดับไม่ผ่านและจะไม่สามารถไปเรียน<br>
+          ที่ต่างประเทศตามที่หวังได้นะ แน่ใจแล้วเหรอ?</p>
+      </div>
+      <br>
+      <div class="flex-center">
+        <div>
+          <button type="button" class="btn-enter-web-price" onclick="goto('school-type')">เรียนในไทยก็ได้</button>
+        </div>
+      </div>
+      <br>
+      <div class="padding-left" style="margin-left: 8.5vw ; cursor: pointer; color: blue;">
+        <p onclick="goto('course_offering')">
+          << ขอกลับไปเลือกใหม่</p>
+      </div>
+    </div>
+
+    <div class="choice" id="tutor" data-show="0">
+      <div class="flex-center">
+        <img class="logo-1" src="Pay to Win\ไฟล์ที่ใช้ในเว็บ\รูป\route เรียนในประเทศ\เรียนพิเศษหน่อยไหม.PNG">
+
+      </div>
+      <br>
+      <div class="flex-center">
+        <h1 class="text-center text-header">
+          เรียนพิเศษหน่อยไหม?
+        </h1>
+        <br>
+      </div>
+      <div class="flex-center">
+        <p class="text-left">
+          ถ้าจะเรียนต่อระดับมหาวิทยาลัยในอนาคตกับระบบการศึกษาเท่านี้<br>
+          ยังทำให้แกร่งไม่พอจะไปสู้เขาแน่<br><br>
+          ทางเราจึงขอเสนอวิธีแก้ปัญหาด้วยการเรียนพิเศษที่มีให้เลือก<br>
+          สรรหลากหลายแบบตามใจประสงค์!
+        </p>
+      </div>
+      <div class="flex-center padding-t-b">
+        <button type="button" class="btn-enter-web" onclick="goto('extra-class')">ต่อไป</button>
+      </div>
+    </div>
+
+    <div class="choice" id="extra-class" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('extra-class')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('extra-class')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">เรียนพิเศษกันหน่อยไหม ?</h1>
+        </b>
+      </div>
+      <br>
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับติวเตอร์.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="take-class">เรียนกับติวเตอร์</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red" src="Pay to Win/icon/เรียนกับติวเตอร์ icon.svg">
+          <img class="icon" src="Pay to Win/icon/เรียนกับวิดีโอ icon.svg">
+          <img class="icon" src="Pay to Win/icon/ไม่เรียนพิเศษ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">เรียนพิเศษตัวต่อตัวกับรุ่นพี่ อาจารย์ หรือติวเตอร์ที่คุณชื่นชอบ
+              <br>มีข้อได้เปรียบตรงสงสัยอะไรตรงไหนก็ถามได้ในทันที ขอให้เน้น
+              <br>ตรงไหน ก็เน้นได้ตามสั่ง แต่ไม่รู้จะสู้กับการเรียนกับที่ติวดังๆ <br> ได้ไหมน่ะสิ . . .
+            </p>
+            <p class="text-price class-price">57,600 บาทต่อ 3 ปี</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(12)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/เรียนกับวิดีโอ.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="take-class">เรียนกับวิดีโอ</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/เรียนกับติวเตอร์ icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/เรียนกับวิดีโอ icon.svg">
+          <img class="icon" src="Pay to Win/icon/ไม่เรียนพิเศษ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">ยิ่งเริ่มก่อน ยิ่งพร้อมก่อน, อะไรจะสะดวกสบาย ไปกว่าการเรียน
+            <br>กับวิดีโอที่สามารถกรอไปกรอมาได้อีกล่ะ? ถึงแม้ว่าจะตอบโต้กับ <br>คนไม่ได้ก็เถอะ
+            แต่เรามาเรียนนี่ ไม่ได้มาคุยซะหน่อย! <br> <br> ยอดฮิตจนห้ามพลาดเลยล่ะตัวเลือกนี้
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web"
+            onclick="goto('course') ; choose_choice(13)">ไปเลือกคอร์สติว</button>
+        </div>
+      </div>
+
+      <div class="info-3" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/เรียนพิเศษหน่อยไหม/ไม่เรียนพิเศษ.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="take-class">ไม่เรียนพิเศษ</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/เรียนกับติวเตอร์ icon.svg">
+          <img class="icon" src="Pay to Win/icon/เรียนกับวิดีโอ icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/ไม่เรียนพิเศษ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">อันนี้คือมั่นใจในตัวเองหรือเงินไม่พอละเนี่ย?<br>
+            <br>อย่าลืมสิว่าเพื่อนคนอื่นๆ ยอมจ่ายเพื่อที่จะเพิ่มโอกาสนะ จะยอมให้
+            <br>โอกาสตัวเองน้อยกว่าคนอื่นจริงๆ เหรอ?
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(14)">เลือก</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="course" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('course')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('course')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">คอร์สเรียนแนะนำ!</h1>
+        </b>
+      </div>
+      <br>
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/คอร์สเรียนแนะนำ/คอร์สต้นอ่อน.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="course-line">คอร์สต้นอ่อน</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red" src="Pay to Win/icon/คอร์สต้นอ่อน icon.svg">
+          <img class="icon icon_2" src="Pay to Win/icon/คอร์สสมใจหวัง icon.svg">
+          <img class="icon icon_3" src="Pay to Win/icon/คอร์สสร้างแชมป์.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">‘คอร์สปูพื้นฐานจำเป็นสำหรับสอบเข้ามหาลัย ไม่เข้มข้นเท่าไหร่
+              <br>แต่สบายกระเป๋า!’
+            </p>
+            <p class="text-price course-price">20,000 บาท</p>
+            <p class="text-small">*โอกาสสอบติดขึ้นอยู่กับความเก่งติดตัว</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(15)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/คอร์สเรียนแนะนำ/คอร์สสมใจหวัง.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="course-line">คอร์สสมใจหวัง</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/คอร์สต้นอ่อน icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/คอร์สสมใจหวัง icon.svg">
+          <img class="icon" src="Pay to Win/icon/คอร์สสร้างแชมป์.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">'คอร์สเรียน ติวเนื้อหาสอบเข้ามหาลัยอย่างเข้มข้นเหมาะสำหรับ <br>เด็ก ม.6
+              ที่กำลังพยายามยัดความรู้เข้าสมองก่อนเข้าสู่สนามสอบ <br>ในเวลาที่จำกัด
+              เพื่อมหาลัยในฝันที่ไม่ไกลเกินเอื้อม!'</p>
+            <p class="text-price course-price">78,100 บาท</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(16)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-3" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/คอร์สเรียนแนะนำ/คอร์สสร้างแชมป์.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="course-line">คอร์สสร้างแชมป์</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" src="Pay to Win/icon/คอร์สต้นอ่อน icon.svg">
+          <img class="icon" src="Pay to Win/icon/คอร์สสมใจหวัง icon.svg">
+          <img class="icon icon-red" src="Pay to Win/icon/คอร์สสร้างแชมป์.svg">
+        </div>
+        <div class="flex-center">
+          <div class="text-left">
+            <p class="text-left">‘คอร์สเพิ่มผลการเรียน ติวเข้มเนื้อหาตั้งแต่ ม. 4 - เตรียมเข้ามหาลัย <br>สำหรับน้องๆ
+              ที่อยากได้ทั้งเกรดทั้งมหาลัยในฝัน’</p>
+            <p class="text-price course-price">164,100 บาท</p>
+            <p class="text-small">*เหมาะสำหรับคนพร้อมเรียนพิเศษ 6 ช.ม. ต่อวัน
+              <br>** อาจเรียนไม่ทันถ้าไม่เริ่มตั้งแต่ตอน ม.4
+              <br>***เรียนไม่ไหว เราไม่คืนเงิน
+            </p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('otherbook') ; choose_choice(17)">เลือก</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="otherbook" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo('otherbook')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo('otherbook')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">หนังสือจิปาถะอื่นๆหนังสือจิปาถะอื่นๆ</h1>
+        </b>
+      </div>
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ซื้อเพิ่ม.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="other-book">ซื้อเพิ่ม</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon icon-red" data-icon="1"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ซื้อหนังสือ icon.svg">
+          <img class="icon" data-icon="0"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ไม่ซื้อหนังสือ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">แน่นอนสิ เรียนอย่างเดียวจะไปพออะไร ถ้ามีหนังสือไว้อ่านตอนก่อน
+            <br>เข้านอน ก่อนอาบน้ำ ก่อนกินข้าวเช้า ต้องทำให้ชีวิตง่ายขึ้นมากแน่ๆ
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('book') ; choose_choice(18)">เลือก</button>
+        </div>
+      </div>
+
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ไม่ซื้อเพิ่ม.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p class="other-book">ไม่ซื้อเพิ่ม</p>
+          </div>
+        </div>
+        <br>
+        <div class="flex-center">
+          <img class="icon" data-icon="1"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ซื้อหนังสือ icon.svg">
+          <img class="icon icon-red" data-icon="0"
+            src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/หนังสือจิปาถะอื่นๆ/ไม่ซื้อหนังสือ icon.svg">
+        </div>
+        <br>
+        <div class="flex-center">
+          <p class="text-left">ถามจริง ?
+          </p>
+        </div>
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure') ; choose_choice(19)">เลือก</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="choice" id="book" data-show="0">
+      <!-- ปุ่ม -->
+      <a>
+        <img class="btn btn-left" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนซ้าย.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('book')">
+      </a>
+      <a>
+        <img class="btn btn-right" src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/ปุ่ม/เลื่อนขวา.png"
+          style="width: 30px; height: auto;" onclick="swapInfo_2('book')">
+      </a>
+      <!--  -->
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">ชุดหนังสือแนะนำ</h1>
+        </b>
+      </div>
+      <br>
+      <div class="info-1" data-swap="1">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/ชุดหนังสือแนะนำ/เซ็ตติด_.PNG"
+            style="height: 30vh;">
         </div>
         <br>
         <div class="flex-center">
@@ -1013,12 +1127,13 @@
         </div>
         <br>
         <div class="flex-center">
-            <div class="text-left"><p>'เซ็ตหนังสือที่จะช่วยให้คุณผ่านการสอบไปแบบงงๆ เพื่อเข้าไปลุ้น <br>
-                โอกาสสอบติดในภายหลัง ด้วยผลการสอบติดที่ได้รับการยืนยัน<br>
-                ว่าเพิ่มขึ้นจริง 10%!'                  
+          <div class="text-left">
+            <p>'เซ็ตหนังสือที่จะช่วยให้คุณผ่านการสอบไปแบบงงๆ เพื่อเข้าไปลุ้น <br>
+              โอกาสสอบติดในภายหลัง ด้วยผลการสอบติดที่ได้รับการยืนยัน<br>
+              ว่าเพิ่มขึ้นจริง 10%!'
             </p>
             <p class="text-price" style="color: red;">3,500 บาท</p>
-        </div>
+          </div>
         </div>
 
         <br>
@@ -1027,40 +1142,43 @@
         </div>
       </div>
 
-        <div class="info-2" data-swap="0">
-            <div class="flex-center">
-              <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/ชุดหนังสือแนะนำ/เซ็ตติด.PNG" style="height: 30vh;">
-            </div>
-            <br>
-            <div class="flex-center">
-              <div class="text-box">
-                <p>SET ติด</p>
-              </div>
-            </div>
-            <br>
+      <div class="info-2" data-swap="0">
+        <div class="flex-center">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/ชุดหนังสือแนะนำ/เซ็ตติด.PNG"
+            style="height: 30vh;">
+        </div>
+        <br>
+        <div class="flex-center">
+          <div class="text-box">
+            <p>SET ติด</p>
+          </div>
+        </div>
+        <br>
         <div class="flex-center">
           <img class="icon" src="Pay to Win/icon/เซ็ตติด_อันแรก icon.svg">
           <img class="icon icon-red" src="Pay to Win/icon/เซ็ตติด_อันที่สอง icon.svg">
           <img class="icon" src="Pay to Win/icon/เซ็ตติด_อันที่สาม icon.svg">
         </div>
-            <br>
-            <div class="flex-center">
-                <div class="text-left"><p>'เซ็ตหนังสือติวตะลุยโจทย์ข้อสอบปีก่อนๆ ที่จะช่วยให้คุณเข้าใจใน <br>
-                    เทคนิคลัดและทำข้อสอบได้ผ่านฉลุย แต่ไม่รู้ว่าจะพอสำหรับคณะ <br>
-                    ที่คุณหวังไว้หรือเปล่านะ'</p>              
-                  <p class="text-price">9,900 บาท</p>
-                </div>
-            </div>
-       
-            <br>
-            <div class="flex-center">
-              <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
-            </div>
-          </div>  
+        <br>
+        <div class="flex-center">
+          <div class="text-left">
+            <p>'เซ็ตหนังสือติวตะลุยโจทย์ข้อสอบปีก่อนๆ ที่จะช่วยให้คุณเข้าใจใน <br>
+              เทคนิคลัดและทำข้อสอบได้ผ่านฉลุย แต่ไม่รู้ว่าจะพอสำหรับคณะ <br>
+              ที่คุณหวังไว้หรือเปล่านะ'</p>
+            <p class="text-price">9,900 บาท</p>
+          </div>
+        </div>
+
+        <br>
+        <div class="flex-center">
+          <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
+        </div>
+      </div>
 
       <div class="info-3" data-swap="0">
         <div class="flex-center">
-          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/ชุดหนังสือแนะนำ/เซ็ตติด!.PNG" style="height: 30vh;">
+          <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/route เรียนในประเทศ/ชุดหนังสือแนะนำ/เซ็ตติด!.PNG"
+            style="height: 30vh;">
         </div>
         <br>
         <div class="flex-center">
@@ -1076,203 +1194,216 @@
         </div>
         <br>
         <div class="flex-center">
-            <div class="text-left"><p>'เซ็ตหนังสือแนะนำจากอดีตรุ่นพี่ที่ติดคณะดีๆ ในมหาวิทยาลัยดังๆ<br>
-                ที่มีทั้งหนังสือตะลุยโจทย์และหนังสือสรุปเนื้อหา รับประกันได้เลยว่า <br>
-                ถ้ามีเอาไว้ โอกาสติดคณะในฝันเพิ่มขึ้นอย่างแน่นอน!'
+          <div class="text-left">
+            <p>'เซ็ตหนังสือแนะนำจากอดีตรุ่นพี่ที่ติดคณะดีๆ ในมหาวิทยาลัยดังๆ<br>
+              ที่มีทั้งหนังสือตะลุยโจทย์และหนังสือสรุปเนื้อหา รับประกันได้เลยว่า <br>
+              ถ้ามีเอาไว้ โอกาสติดคณะในฝันเพิ่มขึ้นอย่างแน่นอน!'
             </p>
-            <p class="text-price"style="color: red;">21,000 บาท</p>
-        </div>
+            <p class="text-price" style="color: red;">21,000 บาท</p>
+          </div>
         </div>
         <br>
         <div class="flex-center">
           <button type="button" class="btn-enter-web" onclick="goto('r-u-sure')">เลือก</button>
         </div>
       </div>
+    </div>
+
+    <div class="choice" id="r-u-sure" data-show="0">
+      <div class="flex-center">
+        <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/แน่ใจแล้วหรือยัง.PNG" style="width: 200px;">
       </div>
+      <br>
+      <div class="flex-center">
 
-      <div class="choice" id="r-u-sure" data-show="0">
-        <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/แน่ใจแล้วหรือยัง.PNG" style="width: 200px;">
-        </div>
-        <br>
-        <div class="flex-center">
+        <h2>แน่ใจแล้วหรือยัง?</h2>
 
-            <h2>แน่ใจแล้วหรือยัง?</h2>
-
-        </div>
-        <br>
-        <div class="flex-center">
-            <p class="text-center">คุณเกือบจะถึงขั้นตอนสุดท้ายแล้วล่ะ
-                <br>หลังจากขั้นตอนนี้ จะเป็นการสรุปผลหลังจากการเดินทางที่แสนยาวไกลของคุณ
-                <br>อนาคตของคุณจะขึ้นอยู่กับสิ่งนี้ และคุณจะกลับไปแก้ไขไม่ได้อีก
-                <br>
-                <br>
-                <br>แน่ใจแล้วหรือยัง ว่าหนทางที่คุณเลือกนั้นดีที่สุดสำหรับความฝันของคุณ?
-            </p>
-        </div>
-        <br>
-        <div class="flex-center">
-            <div >
-                <button type="button" class="btn-enter-web-price" onclick="goto('one-star')">แน่ใจ</button>
-            </div>
-        </div>
-        <br>
-        <div class="padding-left" style="margin-left: 6vw ; cursor: pointer; color: blue;">
-          <p onclick="goto('country-or-abroad')"> << ขอเลือกใหม่</p>
+      </div>
+      <br>
+      <div class="flex-center">
+        <p class="text-center">คุณเกือบจะถึงขั้นตอนสุดท้ายแล้วล่ะ
+          <br>หลังจากขั้นตอนนี้ จะเป็นการสรุปผลหลังจากการเดินทางที่แสนยาวไกลของคุณ
+          <br>อนาคตของคุณจะขึ้นอยู่กับสิ่งนี้ และคุณจะกลับไปแก้ไขไม่ได้อีก
+          <br>
+          <br>
+          <br>แน่ใจแล้วหรือยัง ว่าหนทางที่คุณเลือกนั้นดีที่สุดสำหรับความฝันของคุณ?
+        </p>
+      </div>
+      <br>
+      <div class="flex-center">
+        <div>
+          <button type="button" class="btn-enter-web-price" onclick="goto('one-star')">แน่ใจ</button>
         </div>
       </div>
+      <br>
+      <div class="padding-left" style="margin-left: 6vw ; cursor: pointer; color: blue;">
+        <p onclick="goto('country-or-abroad')">
+          << ขอเลือกใหม่</p>
+      </div>
+    </div>
 
-      <div class="choice" id="one-star" data-show="0">
-        <div class="flex-center">
-            <b>
-                <h1 class="text-center">สรุปคุณภาพการศึกษา</h1>
-            </b>
-        </div>
-
-        <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/คุณภาพการศึกษา/1 ดาว.png" style="width: 200px;">
-        </div>
-        <br>
-        <div class="flex-center">
-            <div class="text-box">
-                <p>1 ดาว</p>
-            </div>
-        </div>
-        <br>
-        <div class="flex-center">
-            <p class="text-left">คุณภาพการศึกษาที่คุณจะได้รับอยู่ในระดับพอใช้ แน่นอนว่ามันจะ
-                <br>เพียงพอให้คุณมีอะไรไว้เลี้ยงชีพให้อยู่รอด แต่ถามจริงๆ เถอะ
-                <br>คุณหวังไว้เท่านี้จริงๆ เหรอ? ถ้ามีเงิน คุณจะอยากไปไกลกว่านี้มั้ย?
-                <br>
-                <br>คำตอบนี้คุณรู้อยู่แก่ใจ
-            </p>
-        </div>
-        <br>
-        <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('price-conclusion')">ต่อไป</button>
-        </div>
+    <div class="choice" id="one-star" data-show="0">
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">สรุปคุณภาพการศึกษา</h1>
+        </b>
       </div>
 
-      <div class="choice" id="two-star" data-show="0">
-        <div class="flex-center">
-            <b>
-                <h1 class="text-center">สรุปคุณภาพการศึกษา</h1>
-            </b>
-        </div>
-
-        <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/คุณภาพการศึกษา/2 ดาว.png" style="width: 200px;">
-        </div>
-        <br>
-        <div class="flex-center">
-            <div class="text-box">
-                <p>2 ดาว</p>
-            </div>
-        </div>
-        <br>
-        <div class="flex-center">
-            <p class="text-left">คุณภาพการศึกษาที่คุณจะได้รับอยู่ที่ระดับดีปานกลาง ซึ่งถือเป็น
-                <br>ระดับที่เด็กมีโอกาสได้เรียนต่อในระดับมหาวิทยาลัยส่วนใหญ่ได้รับ
-                <br>แต่อย่าลืมว่าโอกาสของคุณนั้นเป็นครึ่งต่อครึ่ง  ถ้าพยายามเข้าไว
-                <br>ชีวิตในฝันก็คงไมเกินเอื้อมหรอกมั้ง . . 
-                <br>
-                <br>พยายามต่อไปนะ
-            </p>
-        </div>
-        <br>
-        <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('price-conclusion')">ต่อไป</button>
+      <div class="flex-center">
+        <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/คุณภาพการศึกษา/1 ดาว.png" style="width: 200px;">
+      </div>
+      <br>
+      <div class="flex-center">
+        <div class="text-box">
+          <p>1 ดาว</p>
         </div>
       </div>
+      <br>
+      <div class="flex-center">
+        <p class="text-left">คุณภาพการศึกษาที่คุณจะได้รับอยู่ในระดับพอใช้ แน่นอนว่ามันจะ
+          <br>เพียงพอให้คุณมีอะไรไว้เลี้ยงชีพให้อยู่รอด แต่ถามจริงๆ เถอะ
+          <br>คุณหวังไว้เท่านี้จริงๆ เหรอ? ถ้ามีเงิน คุณจะอยากไปไกลกว่านี้มั้ย?
+          <br>
+          <br>คำตอบนี้คุณรู้อยู่แก่ใจ
+        </p>
+      </div>
+      <br>
+      <div class="flex-center">
+        <button type="button" class="btn-enter-web" onclick="goto('price-conclusion')">ต่อไป</button>
+      </div>
+    </div>
 
-      <div class="choice" id="three-star" data-show="0">
-        <div class="flex-center">
-            <b>
-                <h1 class="text-center">สรุปคุณภาพการศึกษา</h1>
-            </b>
-        </div>
-        <br>
-
-        <div class="flex-center">
-            <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/คุณภาพการศึกษา/3 ดาว.png" style="width: 200px;">
-        </div>
-        <br>
-        <div class="flex-center">
-            <div class="text-box">
-                <p>3 ดาว</p>
-            </div>
-        </div>
-        <br>
-        <div class="flex-center">
-            <p class="text-left">คุณภาพการศึกษาที่คุณจะได้รับอยู่ในระดับดีมาก!
-                <br>คุณจะได้เรียนกับอาจารย์ที่ดีที่สุดและจะได้เรียนในหลักสูตรที่เจ๋งที่สุด
-                <br>เท่าที่โลกนี้จะเอื้ออำนวยให้คุณไปถึงฝันตามที่คุณคาดหวังได้สำเร็จ
-                <br>แต่ก็อย่าชะล่าใจไป ต้องพยายามเข้าไว้จนกว่าจะไปถึงฝันเลยนะ
-                <br>เพราะเส้นทางนี้มันแสนยาวไกล เข้าใจไหม?
-            </p>
-        </div>
-        <br>
-        <div class="flex-center">
-            <button type="button" class="btn-enter-web" onclick="goto('price-conclusion')">ต่อไป</button>
-        </div>
+    <div class="choice" id="two-star" data-show="0">
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">สรุปคุณภาพการศึกษา</h1>
+        </b>
       </div>
 
-      <div class="choice" id="price-conclusion" data-show="1">
-        <div class="flex-center">
-          <h2 class="text-center">
-            สรุปค่าใช้จ่ายสำหรับการศึกษาของคุณ
-          </h2>
+      <div class="flex-center">
+        <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/คุณภาพการศึกษา/2 ดาว.png" style="width: 200px;">
+      </div>
+      <br>
+      <div class="flex-center">
+        <div class="text-box">
+          <p>2 ดาว</p>
         </div>
-        <br>
-        <div class="flex-center">
-          <div class="card-container">
-            <div class="grid-parent-bill">
-              <div class="column-1 text-left">
-                <p></p>
-                <b><span id="result-country"></span></b>
-                <b><p>
+      </div>
+      <br>
+      <div class="flex-center">
+        <p class="text-left">คุณภาพการศึกษาที่คุณจะได้รับอยู่ที่ระดับดีปานกลาง ซึ่งถือเป็น
+          <br>ระดับที่เด็กมีโอกาสได้เรียนต่อในระดับมหาวิทยาลัยส่วนใหญ่ได้รับ
+          <br>แต่อย่าลืมว่าโอกาสของคุณนั้นเป็นครึ่งต่อครึ่ง ถ้าพยายามเข้าไว
+          <br>ชีวิตในฝันก็คงไมเกินเอื้อมหรอกมั้ง . .
+          <br>
+          <br>พยายามต่อไปนะ
+        </p>
+      </div>
+      <br>
+      <div class="flex-center">
+        <button type="button" class="btn-enter-web" onclick="goto('price-conclusion')">ต่อไป</button>
+      </div>
+    </div>
+
+    <div class="choice" id="three-star" data-show="0">
+      <div class="flex-center">
+        <b>
+          <h1 class="text-center">สรุปคุณภาพการศึกษา</h1>
+        </b>
+      </div>
+      <br>
+
+      <div class="flex-center">
+        <img src="Pay to Win/ไฟล์ที่ใช้ในเว็บ/รูป/คุณภาพการศึกษา/3 ดาว.png" style="width: 200px;">
+      </div>
+      <br>
+      <div class="flex-center">
+        <div class="text-box">
+          <p>3 ดาว</p>
+        </div>
+      </div>
+      <br>
+      <div class="flex-center">
+        <p class="text-left">คุณภาพการศึกษาที่คุณจะได้รับอยู่ในระดับดีมาก!
+          <br>คุณจะได้เรียนกับอาจารย์ที่ดีที่สุดและจะได้เรียนในหลักสูตรที่เจ๋งที่สุด
+          <br>เท่าที่โลกนี้จะเอื้ออำนวยให้คุณไปถึงฝันตามที่คุณคาดหวังได้สำเร็จ
+          <br>แต่ก็อย่าชะล่าใจไป ต้องพยายามเข้าไว้จนกว่าจะไปถึงฝันเลยนะ
+          <br>เพราะเส้นทางนี้มันแสนยาวไกล เข้าใจไหม?
+        </p>
+      </div>
+      <br>
+      <div class="flex-center">
+        <button type="button" class="btn-enter-web" onclick="goto('price-conclusion')">ต่อไป</button>
+      </div>
+    </div>
+
+    <div class="choice" id="price-conclusion" data-show="0">
+      <div class="flex-center">
+        <h2 class="text-center">
+          สรุปค่าใช้จ่ายสำหรับการศึกษาของคุณ
+        </h2>
+      </div>
+      <br>
+      <div class="flex-center">
+        <div class="card-container">
+          <div class="grid-parent-bill">
+            <div class="column-1 text-left">
+              <p></p>
+              <b><span id="result-country"></span></b>
+              <b>
+                <p>
                   <span id="result-school-type"></span>
-                </p></b>
-                <p><span id="result-study-line"></span></p>
-                <b><p>
+                </p>
+              </b>
+              <p><span id="result-study-line"></span></p>
+              <b>
+                <p>
                   <span id="result-take-class"></span>
-                </p></b>
-                <b><p><span id="result-course-line"></span></p></b>
-                <p><span id=""></span></p>
-                <b><p><span id="result-other-book"></span></p></b>
-                <p>SET ติด!</p>
-                <br>
-                
-    
+                </p>
+              </b>
+              <b>
+                <p><span id="result-course-line"></span></p>
+              </b>
+              <p><span id=""></span></p>
+              <b>
+                <p><span id="result-other-book"></span></p>
+              </b>
+              <p>SET ติด!</p>
+              <br>
+
+
             </div>
             <div class="column-2 text-right">
-                <p>.</p>
-                <p>.</p>
-                <p><span id="study-line-price"></span></p>
-                <p><span id="study-line-price"></span></p>
-                <p>.</p>
-                <p><span id="result-course-price"></span></p>
-                <p>.</p>
-                <p></p>
-                <br>
-                
-            </div>
+              <p>.</p>
+              <p>.</p>
+              <p><span id="study-line-price"></span></p>
+              <p><span id="study-line-price"></span></p>
+              <p>.</p>
+              <p><span id="result-course-price"></span></p>
+              <p>.</p>
+              <p></p>
+              <br>
+
             </div>
           </div>
         </div>
-        <div class="flex-center padding-t-b">
-          <div class="padding"></div>
-          <button type="button" class="btn-enter-web-price" onclick="location.href='end-page.html'">พร้อมที่จะจ่าย</button>
-        </div>
-        <div class="padding-left" style="margin-left: 5vw ; cursor: pointer; color: blue;">
-          <p onclick="goto('country-or-abroad')"> << ขอเลือกใหม่</p>
-        </div>
       </div>
-
+      <div class="flex-center padding-t-b">
+        <div class="padding"></div>
+        <button type="button" class="btn-enter-web-price"
+          onclick="location.href='end-page.html'">พร้อมที่จะจ่าย</button>
+      </div>
+      <div class="padding-left" style="margin-left: 5vw ; cursor: pointer; color: blue;">
+        <p onclick="goto('country-or-abroad')">
+          << ขอเลือกใหม่</p>
+      </div>
     </div>
-    
-    <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </body>
+
+  </div>
+
+  <script type="text/javascript" src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
 </html>
