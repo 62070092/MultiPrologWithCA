@@ -10,6 +10,15 @@ body{
     background-position:center;
     background-size: cover;
 }
+.container{
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    padding: 1rem;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 
 .ct-box{
     width: 100%;
@@ -82,6 +91,12 @@ body{
 .padding{
     padding:0 1rem;
 }
+.logo-1{
+    height: 35vh;
+}
+.padding-t-b{
+    padding: 4vw 0vw;
+}
 
 
 
@@ -103,7 +118,7 @@ td{
     width: 0.5vw;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
 
     h2{
         font-size: 1.4rem;
@@ -117,10 +132,9 @@ td{
         height: 35vh;
     }
     .padding{
-        padding:0 1.5rem;
+        padding:0rem 1.5rem;
     }
     .btn-enter-web{
         font-size: 1rem;
     }
-
 }
