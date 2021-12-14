@@ -44,6 +44,7 @@ function goto(choice){
     let des_choice = document.querySelector(`#${choice}`)
     openChoice(choice)
     window.scroll(0, des_choice.offsetTop);
+
 }
 
 function openChoice(choice){
@@ -53,10 +54,6 @@ function openChoice(choice){
     })
     document.querySelector(`#${choice}`).dataset.show = "1";
 }
-
-
-
-
 
 function choose_choice(num){
     const country = document.getElementsByClassName('.country').value;
@@ -245,7 +242,9 @@ window.addEventListener('load', () => {
     document.getElementById('result-book-price').innerText = book_price;
     document.getElementById('result-offering').innerText = offering;
     document.getElementById('result-off-price').innerText = off_price;
+
 })
 
 
 // window.localStorage.clear();
+
