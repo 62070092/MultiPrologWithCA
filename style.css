@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@600&display=swap%27');
 
+
 body{
+    --bbar:0rem;
     background-image: url('Pay to Win/BG.jpg');
     background-color: hsl(139, 100%, 70%);
     font-family: 'Bai Jamjuree', sans-serif;
@@ -221,7 +223,7 @@ img{
 
 .progress{
     height: 0.8rem;
-    width: 8rem;
+    width: 20rem;
     border-radius: 0.4rem;
     background: white;
 
@@ -238,206 +240,6 @@ img{
   
 
 
-/*school-type*/
-.bar.bar_1[data-bar="1"]{
-    height: 100%;
-    width: 3.7rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_1[data-bar="2"]{
-    height: 100%;
-    width: 3.7rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_1[data-bar="3"]{
-    height: 100%;
-    width: 4rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-/*line_school*/
-.bar.bar_2[data-bar="1"]{
-    height: 100%;
-    width: 3.5rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_2[data-bar="2"]{
-    height: 100%;
-    width: 4rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_2[data-bar="3"]{
-    height: 100%;
-    width: 4rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-/*private-school*/
-.bar.bar_3[data-bar="1"]{
-    height: 100%;
-    width: 3.8rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_3[data-bar="2"]{
-    height: 100%;
-    width: 4.2rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_3[data-bar="3"]{
-    height: 100%;
-    width: 4rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-/*Take-extar-class จาก อาชีวะ*/
-.bar.bar_4[data-bar="1"]{
-    height: 100%;
-    width: 4.2rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_4[data-bar="2"]{
-    height: 100%;
-    width: 4rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_4[data-bar="3"]{
-    height: 100%;
-    width: 3.7rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-/*course*/
-.bar.bar_5[data-bar="1"]{
-    height: 100%;
-    width: 4rem;
-    border-radius: 0.5rem;
-    background: #ff4754;
-}
-
-.bar.bar_5[data-bar="2"]{
-    height: 100%;
-    width: 4.1rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_5[data-bar="3"]{
-    height: 100%;
-    width: 4.2rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-/*book*/
-.bar.bar_6[data-bar="1"]{
-    height: 100%;
-    width: 5rem;
-    border-radius: 0.5rem;
-    background: #ff4754;
-}
-
-.bar.bar_6[data-bar="2"]{
-    height: 100%;
-    width: 5.5rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_6[data-bar="3"]{
-    height: 100%;
-    width: 7.3rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-/*otherbook*/
-.bar.bar_7[data-bar="1"]{
-    height: 100%;
-    width: 4.5rem;
-    border-radius: 0.5rem;
-    background: #ff4754;
-}
-
-.bar.bar_7[data-bar="2"]{
-    height: 100%;
-    width: 4rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-
-}
-/*star*/
-/* .star_1[data-star="0"]{
-    display: none;
-}
-
-.star_2[data-star="0"]{
-    display: none;
-}
-
-.star_3[data-star="0"]{
-    display: none;
-} */
-
-.star_icon{
-    margin-left: 15px;
-    height: 15px;
-}
-
-/*i'm ready*/
-.bar.bar_8[data-bar="1"]{
-    height: 100%;
-    width: 3.5rem;
-    border-radius: 0.5rem;
-    background: #ff4754;
-}
-
-.bar.bar_8[data-bar="2"]{
-    height: 100%;
-    width: 2.5rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-/*ready*/
-.bar.bar_9[data-bar="1"]{
-    height: 100%;
-    width: 7.5rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_9[data-bar="2"]{
-    height: 100%;
-    width: 7rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
-
-.bar.bar_9[data-bar="3"]{
-    height: 100%;
-    width: 6.5rem;
-    border-radius: 0.4rem;
-    background: #ff4754;
-}
 
 #one_350k{
     width: auto;
