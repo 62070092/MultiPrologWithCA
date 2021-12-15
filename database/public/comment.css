@@ -169,10 +169,17 @@ a:hover {
 }
 
 footer{
-    background-color: blue;
-    color: white;
-    padding: 1vw 1vw;
-    width: auto;
+    color: black;
+    width: 100%;
+    height: auto;
     display: inline-block;
-    overflow: hidden;
+    overflow: auto;
+    margin: 0px;
 }
+
+.text-footer{
+    margin-left: 3vw;
+}
+
+
+
