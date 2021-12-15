@@ -44,6 +44,7 @@ function goto(choice){
     let des_choice = document.querySelector(`#${choice}`)
     openChoice(choice)
     window.scroll(0, des_choice.offsetTop);
+
 }
 
 function openChoice(choice){
@@ -53,10 +54,6 @@ function openChoice(choice){
     })
     document.querySelector(`#${choice}`).dataset.show = "1";
 }
-
-
-
-
 
 function choose_choice(num){
     const country = document.getElementsByClassName('.country').value;
@@ -68,6 +65,11 @@ function choose_choice(num){
     const course_line = document.getElementsByClassName('.course-line').value;
     const course_price = document.getElementsByClassName('.course-price').value;
     const other_book = document.getElementsByClassName('.other-book').value;
+    const buy_book = document.getElementsByClassName('.buy-book').value;
+    const book_price = document.getElementsByClassName('.book-price').value;
+    const offering = document.getElementsByClassName('.offering').value;
+    const off_price = document.getElementsByClassName('.off-price').value;
+
     if(num == 1){
         localStorage.setItem("country", "ในประเทศ");
     }
@@ -80,7 +82,7 @@ function choose_choice(num){
     if(num == 3){
         localStorage.setItem("school-T", "อาชีววิกรม")
         localStorage.setItem("study-line", "อาชีววิกรม")
-        localStorage.setItem("text-price", "18,000 บาท" )
+        localStorage.setItem("text-price", "18,000 บาท")
     }
 
     if(num == 4){
@@ -164,9 +166,53 @@ function choose_choice(num){
         localStorage.setItem("other-book", "ไม่ซื้อ")
 
     }
-}
 
-function choose_choice_2(num){
+    if(num == 20){
+        localStorage.setItem("buy-book", "SET ติด?")
+        localStorage.setItem("book-price", "3,500 บาท" )
+    }
+
+    if(num == 21){
+        localStorage.setItem("buy-book", "SET ติด")
+        localStorage.setItem("book-price", "9,900 บาท" )
+
+    }
+
+    if(num == 22){
+        localStorage.setItem("buy-book", "SET ติด!")
+        localStorage.setItem("book-price", "21,000 บาท" )
+
+    }
+
+
+    // ต่างประเทศ
+    if(num == 23){
+        localStorage.setItem("school-T", "I’m Ready !")
+    }
+
+    if(num == 24){
+        localStorage.setItem("school-T", "ยังไม่ได้ภาษาเลย")
+    }
+
+    if(num == 25){
+        localStorage.setItem("study-line", "America")
+        localStorage.setItem("line-price", "7,863,923 Baht" )
+    }
+
+    if(num == 26){
+        localStorage.setItem("study-line", "Canada")
+        localStorage.setItem("line-price", "5,818,100 Baht" )
+    }
+
+    if(num == 27){
+        localStorage.setItem("study-line", "Singapore")
+        localStorage.setItem("line-price", "2,400,000 Baht" )
+    }
+
+    if(num == 28){
+        localStorage.setItem("offering", "Course offering!")
+        localStorage.setItem("off-price", "75,300 Baht")
+    }
 
 }
 
@@ -176,21 +222,29 @@ window.addEventListener('load', () => {
     const study_line = localStorage.getItem('study-line');
     const price = localStorage.getItem('line-price');
     const take_class = localStorage.getItem('take-class');
-    const class_price = localStorage.getItem('class-price');
-    const course_line = localStorage.getItem('.course-line');
-    const course_price = localStorage.getItem('.course-price');
-
+    const course_line = localStorage.getItem('course-line');
+    const course_price = localStorage.getItem('course-price');
     const other_book = localStorage.getItem('other-book');
+    const buy_book = localStorage.getItem('buy-book');
+    const book_price = localStorage.getItem('book-price');
+    const offering = localStorage.getItem('offering');
+    const off_price = localStorage.getItem('off-price');
+
     document.getElementById('result-country').innerText = country;
     document.getElementById('result-school-type').innerText = school_type;
     document.getElementById('result-study-line').innerText = study_line;
     document.getElementById('study-line-price').innerText = price;
     document.getElementById('result-take-class').innerText = take_class;
-    document.getElementById('result-class-price').innerText = class_price;
     document.getElementById('result-course-line').innerText = course_line;
     document.getElementById('result-course-price').innerText = course_price;
     document.getElementById('result-other-book').innerText = other_book;
+    document.getElementById('result-buy-book').innerText = buy_book;
+    document.getElementById('result-book-price').innerText = book_price;
+    document.getElementById('result-offering').innerText = offering;
+    document.getElementById('result-off-price').innerText = off_price;
+
 })
 
 
 // window.localStorage.clear();
+
